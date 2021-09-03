@@ -1,0 +1,1242 @@
+/* ====================================== UNIVERSAL ====================================== */
+.color-grey-100 {
+  color: var(--grey-100) !important;
+}
+.color-grey-20 {
+  color: var(--grey-20) !important;
+}
+.color-blue-dark-100 {
+  color: var(--blue-dark-100) !important;
+}
+.color-blue {
+  color: var(--blue) !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px 100px 50px; /* top r-l bottom */
+  position: relative;
+  width: 100%;
+  /* background-color: khaki; */
+}
+
+.button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  background: var(--orange-80);
+  border-radius: 24px;
+  /* box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4); */
+  box-sizing: border-box;
+  padding: 15px 120px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  /* margin: 20px 0; */
+  border: none;
+  color: var(--white);
+}
+.button:hover {
+  background: var(--orange-100);
+}
+
+/* JUDUL PALING BESAR */
+h1.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  /* background-color: aqua; */
+}
+
+/* JUDUL SECTION  */
+h2.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-size: 3rem;
+  margin: auto auto 44px auto;
+  /* padding: 20px; */
+  position: relative;
+  /* text-align: left; */
+  text-transform: capitalize;
+  /* width: 65%; */
+}
+
+/* YG BUTUH BESAR AJA */
+h3.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-size: 2rem;
+  /* margin: auto auto 44px auto; */
+  padding: 10px 20px;
+  position: relative;
+  /* text-align: center; */
+  /* text-transform: capitalize; */
+  /* width: 65%; */
+  /* background-color: red; */
+}
+h4.title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* INI BUAT DESKRIPSI */
+p.desc {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+p.small {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p.sub-title {
+  color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+  width: 180px;
+  padding-bottom: 5px;
+  /* text-transform: uppercase; */
+}
+
+span.border-bottom {
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+span.border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  border-bottom: 16px solid var(--orange-80);
+  z-index: -1;
+}
+
+/* ====================================== SECTION 1 ====================================== */
+#sec1.container {
+  padding: 0;
+}
+
+/* ================================ S1 TOP ================================ */
+#sec1.container .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  /* background-color: yellow; */
+}
+#sec1.container .top .left,
+#sec1.container .top .right {
+  position: relative;
+  width: 50%;
+}
+
+/* ====================== S1 TOP LEFT ====================== */
+#sec1.container .top .left {
+  margin-top: 150px;
+  padding-left: 100px;
+  /* background-color: aquamarine; */
+}
+#sec1.container .top .left .desc {
+  margin-bottom: 30px;
+  width: 75%;
+}
+/* #sec1.container .top .left .desc span {
+  display: block;
+} */
+
+#sec1.container .top .left .event-box {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 18px 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 75%;
+  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+  margin-top: 100px;
+  /* background-color: aqua; */
+}
+
+.event-box span {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+  /* background-color: aqua; */
+}
+
+.event-box .sub-left .content-container,
+.event-box .sub-right .content-container {
+  padding-left: 15px;
+  /* background-color: yellow; */
+}
+
+.sub-right .calendar-icon,
+.sub-left .acara-icon {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  /* padding-right: 20px; */
+}
+
+/* .event-box p {
+  font-size: 1rem;
+} */
+.event-box h5 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.event-box .sub-left {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 15px;
+}
+.event-box .sub-right {
+  padding-left: 30px;
+}
+.event-box .sub-left::after {
+  content: "";
+  background-color: var(--grey-20);
+  height: 32px;
+  width: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/* ===================== S1 TOP RIGHT ===================== */
+#sec1.container .top .right {
+  position: relative;
+  text-align: center;
+}
+
+#sec1.container .top .right .img-box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-45%); /* buat naik turunnya*/
+  width: 45rem; /* buat ukuran img*/
+  /* background-color: yellow; */
+}
+
+#sec1.container .top .right .img-box img {
+  pointer-events: none;
+  width: 80%;
+  margin-top: 40px;
+  -webkit-animation: up-down 2.5s infinite;
+  animation: up-down 2.5s infinite;
+  display: inline-block;
+}
+
+/* ======================= ANIMATION ======================= */
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+/* ====================================== SECTION 2 ====================================== */
+/* #sec2.container{ */
+/* background-color: pink; */
+/* height: 50vh; */
+/* } */
+
+#sec2.container .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  /* background-color: yellow; */
+  /* display: grid;  */
+}
+
+#sec2.container .top .left,
+#sec2.container .top .right {
+  position: relative;
+  width: 50%;
+  padding-top: 100px;
+}
+/* ============================== S2 TOP LEFT ============================== */
+/* #sec2.container .top .left{  */
+/* background-color: bisque; */
+
+/* grid-gap: 1rem; */
+/* padding: 1rem; */
+/* margin: 0 auto; */
+/* } */
+#sec2.container .top .left .card-box {
+  width: 100%;
+}
+
+.card-box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+}
+
+#sec2.container .top .left .card-box img {
+  /* width: 20rem; */
+  width: 400px;
+}
+#sec2.container .top .left .card-box .card {
+  width: 400px;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+#sec2.container .top .left .card-box .card:hover {
+  /* height: 350px; */
+  height: 370px;
+  border-radius: 30px;
+}
+#sec2.container .top .left .card-box .card img {
+  border-radius: none;
+  transition: all 0.5s;
+}
+.card-box .card img:hover {
+  border-radius: 0px 0px 0px 50%;
+}
+#sec2.container .top .left .card-box .sub-left {
+  position: relative;
+  margin-left: 30px;
+}
+.card-box .sub-right p.desc,
+.card-box .sub-left p.desc {
+  padding-left: 20px;
+  font-size: 18px;
+}
+.card-box .sub-right h4.title,
+.card-box .sub-left h4.title {
+  font-family: "Playfair Display", serif;
+  margin: 18px 0 0 18px;
+  font-weight: 800;
+}
+
+/* ===================== S2 TOP RIGHT ===================== */
+#sec2.container .top .right {
+  text-align: center;
+}
+
+#sec2.container .top .right p.desc {
+  margin-bottom: 50px;
+}
+#sec2.container .top .right h2.title {
+  margin: auto auto 10px 100px;
+  text-align: left;
+}
+
+/* ============================== S2 CONTENT ============================== */
+#sec2.container .data-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  /* margin: auto; */
+  width: 90%;
+  margin-left: 50px;
+}
+#sec2.container .data-box .data {
+  text-align: left;
+}
+#sec2.container .data-box .data h3.counter {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+#sec2.container .data-box .data h3.counter span {
+  color: var(--blue);
+}
+
+#sec2.container .data-box .data p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* ====================================== SECTION 3 ====================================== */
+#sec3.container {
+  /* background-color: rosybrown; */
+  height: 120vh;
+}
+
+/* ============================== S3 CONTENT ============================== */
+/* #sec3.container .content { */
+/* background-color: aqua; */
+/* } */
+#sec3.container .content h2.title {
+  align-content: left;
+  /* text-align: left; */
+  /* margin-left: -20px; */
+}
+#sec3.container .content p.desc {
+  margin: -50px 0 20px 0;
+}
+/* ============================== S3 CARD-BOX ============================== */
+#sec3.container .content .card-box {
+  margin: auto;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  overflow-x: auto;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+  align-items: stretch;
+  /*  BISA COROUSEL */
+
+  /* background-color: red; */
+  overflow: auto;
+  overflow-y: hidden;
+}
+.card-box::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  z-index: 100;
+  background-color: transparent;
+}
+.card-box::-webkit-scrollbar-thumb {
+  background-color: var(--orange-80);
+
+  border-radius: 50px;
+  visibility: hidden;
+}
+.card-box::-webkit-scrollbar-thumb:hover {
+  visibility: visible;
+}
+
+#sec3.container .content .card-box .card {
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 400px;
+  /* background-color: red; */
+  position: relative;
+  pointer-events: auto;
+}
+#sec3.container .content .card-box .card button {
+  cursor: pointer;
+  margin: 35px 0 10px 0;
+  pointer-events: auto;
+  background-color: aqua;
+}
+#sec3.container .content .card-box .card a button {
+  background-color: red;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-size: 1rem;
+  color: var(--white);
+  margin-top: 60px;
+}
+
+#sec3.container .content .card-box .card:hover {
+  background: var(--card-bg);
+  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+}
+
+#sec3.container .content .card-box .card .img-box {
+  border-radius: 20px;
+  height: 200px;
+  margin: auto auto 15px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+#sec3.container .content .card-box .card .img-box:hover {
+  box-shadow: none;
+}
+
+#sec3.container .content .card-box .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 100%;
+  pointer-events: none;
+}
+
+#sec3.container .content .card-box .card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  /* line-height: 1.1; */
+  margin-bottom: 16px;
+}
+#sec3.container .content .card-box .card p {
+  font-family: "Open Sans", sans-serif;
+  color: var(--grey-100);
+  font-size: 18px;
+  /* font-size: 1rem; */
+}
+
+#sec3.container .content .card-box span {
+  visibility: hidden;
+  display: none;
+}
+
+/* ====================================== SECTION 4 ====================================== */
+#sec4.container {
+  /* background-color: khaki; */
+  height: 200vh;
+}
+
+/* ============================== S4 CONTENT ============================== */
+/* #sec4.container .content {
+  background-color: aqua;
+} */
+#sec4.container .content h2.title {
+  text-align: left;
+}
+#sec4.container .content p.desc {
+  margin: -50px 0 20px 0;
+}
+/* ============================== S4 CONTENT TOP ============================== */
+#sec4.container .content .top {
+  display: flex;
+}
+#sec4.container .content .top a.button {
+  background-color: var(--white);
+  padding: 5px 15px;
+  font-size: 18px;
+  color: var(--blue-dark-100);
+  margin: 20px 20px 10px 0;
+}
+#sec4.container .content .top a.button:hover,
+#sec4.container .content .top a.button.active {
+  border: none;
+  background-color: var(--orange-80);
+  color: var(--white);
+}
+
+/* ============================== S4 CARD-BOX ============================== */
+#sec4.container .content .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: brown; */
+}
+#sec4.container .content .card-box .card {
+  border-radius: 32px;
+  box-sizing: border-box;
+  /* margin: 16px 0 16px 0; ini yang ukuran awal*/
+  margin: 16px 15px 16px 0;
+
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* width: 400px; ini ukuran awal*/
+  width: 327px; /* ini ukuran supaya bisa jadi 3*/
+  /* background-color: red; */
+}
+
+#sec4.container .content .card-box .card:hover {
+  background: var(--card-bg);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sec4.container .content .card-box .card .img-box {
+  border-radius: 20px;
+  height: 200px;
+  margin: auto auto 15px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+#sec4.container .content .card-box .card .img-box:hover {
+  box-shadow: none;
+}
+
+#sec4.container .content .card-box .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 120%;
+  pointer-events: none;
+}
+
+/* ============================== S4 CARD-BOX CATEGORY ============================== */
+#sec4.container .content .card-box .card .category {
+  justify-content: space-between;
+  margin: 20px 0;
+  display: flex;
+  box-sizing: border-box;
+}
+#sec4.container .content .card-box .card .category p {
+  padding-top: 12px;
+}
+#sec4.container .content .card-box .card .category p.rating {
+  background-color: var(--blue);
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--white);
+}
+#sec4.container .content .card-box .card .category img {
+  width: 26px;
+}
+
+/* ============================== S4 CARD-BOX CARD DETAIL ============================== */
+#sec4.container .content .card-box .card .detail {
+  font-size: 18px;
+  text-align: start;
+}
+#sec4.container .content .card-box .card .detail h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+#sec4.container .content .card-box .card .detail p {
+  margin: 10px 0;
+}
+
+/* ============================== S4 CARD-BOX CARD DETAIL BOT ============================== */
+#sec4.container .content .card-box .card .detail .bot {
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  margin-top: 32px;
+}
+#sec4.container .content .card-box .card .detail .bot a.button {
+  background-color: var(--orange-80);
+  border-radius: 32px;
+  font-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+}
+#sec4.container .content .card-box .card .detail .bot a:hover {
+  background-color: var(--orange-100);
+}
+#sec4.container .content .card-box .card .detail .bot h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue);
+}
+
+/* ============================== S4 BOTTOM ============================== */
+#sec4.container .content div.bottom {
+  position: relative;
+  text-align: center;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  color: var(--blue-dark-100);
+}
+
+#sec4.container .content div.bottom a {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border: 2px solid var(--blue-dark-100);
+  /* width: 25%; */
+}
+#sec4.container .content div.bottom a.button {
+  padding: 15px 80px;
+}
+
+#sec4.container .content div.bottom img {
+  width: 26px;
+}
+/* ============================== SECTION 5 ============================== */
+#sec5.container .content {
+  /* background-color: yellow; */
+  margin-bottom: 150px;
+}
+/* ============================== S5 CONTENT ============================== */
+#sec5.container .content h2.title {
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+#sec5.container .content p.desc {
+  margin: -50px auto 90px;
+  width: 70%;
+  text-align: center;
+}
+
+#sec5.container .content .share-container {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: auto;
+  width: 55%;
+}
+
+#sec5.container .content .share-container .share {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 80px;
+}
+
+#sec5.container .content .share-container .share img {
+  margin-right: 12px;
+  pointer-events: none;
+  width: 80px;
+}
+
+#sec5.container .content .share-container .share span {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+#sec5.container .content .share-container .share:hover {
+  width: 190px;
+  /* width: 10rem; */
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH  INI BATAS */
+
+/* ===================================== RESPONSIVE ===================================== */
+/* ================================= TABLET ================================= */
+@media screen and (max-width: 768px) {
+  /* ======================= UNIVERSAL ======================= */
+  .container,
+  #sec4.container {
+    padding: 80px 50px 50px;
+  }
+
+  h2.title {
+    width: 75%;
+    font-size: 48px;
+    font-size: 3rem;
+  }
+
+  span.border-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    border-bottom: 9px solid var(--orange-80);
+    z-index: -1;
+  }
+
+  /* ======================= SECTION 1 ======================= */
+  /* #sec1.container {
+    background-color: pink;
+  } */
+
+  #sec1.container .top {
+    height: auto;
+    box-sizing: border-box;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    text-align: center;
+    margin: 0;
+  }
+
+  #sec1.container .top .left,
+  #sec1.container .top .right {
+    width: 100%;
+  }
+
+  #sec1.container .top .left {
+    box-sizing: border-box;
+    padding: 0px 35px 0;
+    margin-top: 15px;
+  }
+  #sec1.container .top .left p.sub-title {
+    display: block;
+    margin-bottom: 10px;
+    width: 30%;
+    margin-left: 250px;
+  }
+  #sec1.container .top .left .desc {
+    width: 100%;
+  }
+
+  #sec1.container .top .left .event-box {
+    width: 60%;
+    margin-top: 70px;
+    margin-left: 150px;
+  }
+  .event-box p {
+    font-size: 1rem;
+  }
+  .event-box h5 {
+    font-size: 13px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .event-box .sub-left .content-container,
+  .event-box .sub-right .content-container {
+    padding-left: 15px;
+  }
+  .sub-right .calendar-icon,
+  .sub-left .acara-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .event-box .sub-left {
+    padding-left: 10px;
+  }
+  .event-box .sub-right {
+    padding-left: 10px;
+  }
+  .event-box .sub-left::after {
+    content: "";
+    margin-right: 2px;
+  }
+  #sec1.container .top .right .img-box {
+    margin-top: 230px;
+    width: 100%;
+  }
+  #sec1.container .top .right .img-box img {
+    width: 70%;
+  }
+
+  /* ======================= SECTION 2 ======================= */
+  /* #sec2.container { */
+  /* background-color: aqua; */
+  /* } */
+
+  #sec2.container .top .left,
+  #sec2.container .top .right {
+    width: 100%;
+  }
+  #sec2.container .top {
+    height: auto;
+    box-sizing: border-box;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding-top: 80px;
+    /* text-align: center; */
+    margin: 0;
+  }
+
+  #sec2.container .top .left .card-box {
+    /* background-color: red; */
+    height: 300px;
+  }
+  #sec2.container .top .left .card-box .card {
+    height: 320px;
+    width: 100%;
+    /* background-color: coral; */
+  }
+  #sec2.container .top .left .card-box .card img {
+    background-color: red;
+    border-radius: 0px 0px 0px 25%;
+    width: 320px;
+  }
+
+  .card-box .sub-right p.desc,
+  .card-box .sub-left p.desc {
+    font-size: 16px;
+  }
+  .card-box .sub-right h4.title,
+  .card-box .sub-left h4.title {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  #sec2.container .top .right {
+    width: 100%;
+    /* display: none; */
+    /* text-align: center; */
+  }
+  #sec2.container .top .right p.desc {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  #sec2.container .top .right h2.title {
+    margin: auto auto 10px 100px;
+    text-align: center;
+  }
+
+  /* ====================================== SECTION 3 ====================================== */
+  #sec3.container {
+    /* background-color: rosybrown; */
+    height: 100vh;
+  }
+  #sec3.container .content h2.title {
+    text-align: center;
+  }
+  #sec3.container .content p.desc {
+    margin: -30px 0 20px 200px;
+    width: 40%;
+  }
+
+  /* ====================================== SECTION 4 ====================================== */
+  /* #sec4.container {
+  background-color: khaki;
+} */
+  #sec4.container .content h2.title {
+    text-align: center;
+    width: 100%;
+    /* background-color: aqua; */
+  }
+  #sec4.container .content p.desc {
+    margin: -30px 0 10px 80px;
+    /* background-color: yellow; */
+    width: 100%;
+  }
+  #sec4.container .content .card-box .card {
+    margin: 16px 0 16px 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    /* background-color: red; */
+  }
+
+  /* ============================== SECTION 5 ============================== */
+  #sec5.container .content {
+    /* background-color: yellow; */
+    margin-bottom: 150px;
+  }
+  /* ============================== S5 CONTENT ============================== */
+  #sec5.container .content h2.title {
+    text-align: center;
+    /* background-color: cyan; */
+    width: 100%;
+  }
+  #sec5.container .content p.desc {
+    margin: -50px auto 90px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH  INI BATAS */
+
+/* ================================= MOBILE ================================= */
+@media screen and (max-width: 426px) {
+  /* ======================= UNIVERSAL ======================= */
+  .container,
+  #sec4.container {
+    padding: 80px 35px 50px;
+  }
+
+  .button {
+    font-size: 0.875rem;
+    padding: 14px 30px;
+  }
+
+  h1.title {
+    font-size: 32px;
+    /* font-size: 2rem; */
+  }
+
+  h2.title {
+    font-size: 1.5rem;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  p.desc {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+
+  p.small {
+    font-size: 13px;
+    /* font-size: 1rem; */
+  }
+
+  span.border-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    border-bottom: 6px solid var(--orange-80);
+    z-index: -1;
+  }
+
+  /* ======================= SECTION 1 ======================= */
+  #sec1.container .top .left,
+  #sec1.container .top .right {
+    width: 100%;
+  }
+
+  #sec1.container .top .left {
+    box-sizing: border-box;
+  }
+  #sec1.container .top .left .desc {
+    width: 100%;
+  }
+
+  #sec1.container .top .left p.sub-title {
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: 90px;
+    /* background-color: cadetblue; */
+  }
+
+  #sec1.container .top .right .img-box {
+    /* width: 70%; */
+    /* background-color: yellow; */
+    margin-top: 160px;
+  }
+  #sec1.container .top .left .event-box {
+    width: 100%;
+    /* background-color: blue; */
+    margin-top: -5px;
+    /* justify-content: center; */
+    margin-left: -0px;
+    /* margin-right: 50px; */
+  }
+  #sec1.container .top .left .event-box .sub-right .calendar-icon img,
+  #sec1.container .top .left .event-box .sub-left .acara-icon img {
+    width: 70%;
+  }
+  #sec1.container .top .left .event-box .sub-left .content-container {
+    padding-left: 5px;
+    text-align: left;
+  }
+  #sec1.container .top .left .event-box .sub-right .content-container {
+    padding-left: 5px;
+    text-align: left;
+  }
+
+  /* ======================= SECTION 2 ======================= */
+  #sec2.container {
+    min-height: auto;
+    /* background-color: aqua; */
+    padding-bottom: 200px;
+  }
+  #sec2.container .top .left,
+  #sec2.container .top .right {
+    width: 100%;
+  }
+  #sec2.container .top .left .card-box {
+    height: 300px;
+  }
+  #sec2.container .top .left .card-box .card {
+    height: 400px;
+    /* background-color: coral; */
+  }
+
+  .card-box .sub-right p.desc,
+  .card-box .sub-left p.desc {
+    font-size: 16px;
+    /* background-color: red; */
+  }
+  .card-box .sub-right h4.title,
+  .card-box .sub-left h4.title {
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    font-size: 24px;
+    /* background-color: blue; */
+  }
+
+  #sec2.container .top .right {
+    width: 100%;
+  }
+  #sec2.container .top .right p.desc {
+    width: 80%;
+    margin-left: 35px;
+  }
+  #sec2.container .top .right h2.title {
+    margin: 0 0 -10px 0;
+    text-align: center;
+  }
+  #sec2.container .data-box .data {
+    text-align: center;
+    margin-left: -60px;
+  }
+  #sec2.container .data-box .data h3.counter {
+    color: var(--blue);
+    font-size: 2rem;
+  }
+  #sec2.container .data-box .data p {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /* ====================================== SECTION 3 ====================================== */
+  #sec3.container {
+    /* background-color: rosybrown; */
+    height: 150vh;
+  }
+  #sec3.container .content h2.title {
+    text-align: center;
+  }
+  #sec3.container .content p.desc {
+    margin: -50px 0 20px 75px;
+    width: 100%;
+  }
+  /* ====================================== SECTION 4 ====================================== */
+  #sec4.container {
+    /* background-color: khaki; */
+    text-align: center;
+    height: 3500px;
+  }
+  #sec4.container .content h2.title {
+    text-align: center;
+    width: 100%;
+    /* background-color: aqua; */
+    margin-bottom: -10px;
+  }
+  #sec4.container .content p.desc {
+    margin: 0 0 10px 30px;
+    width: 80%;
+  }
+  #sec4.container .content .top a.button {
+    display: none;
+  }
+  #sec4.container .content .card-box .card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  }
+  /* ============================== SECTION 5 ============================== */
+  #sec5.container .content {
+    margin: 200px 0;
+    /* background-color: aquamarine; */
+  }
+  /* ============================== S5 CONTENT ============================== */
+  #sec5.container .content h2.title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  #sec5.container .content p.desc {
+    margin: -50px auto 90px;
+    width: 90%;
+    text-align: center;
+  }
+  #sec5.container .content .share-container {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: -50px;
+  }
+  #sec5.container .content .share-container .share img {
+    width: 150%;
+  }
+}

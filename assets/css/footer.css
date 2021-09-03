@@ -1,0 +1,124 @@
+/* ====================================== UNIVERSAL ====================================== */
+footer {
+  box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 35px 100px 0;
+  width: 100%;
+  background-color: var(--orange-100);
+  /* background-color: var(--orange-80); */
+  border-top-right-radius: 64px;
+  border-top-left-radius: 64px;
+}
+
+/* ================================= TOP ================================= */
+footer .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer .top .left {
+  width: 30%;
+  margin-top: -60px;
+}
+footer .top .right {
+  width: 70%;
+}
+
+/* ======================= TOP  LEFT ======================= */
+footer .top .left .logo {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+footer .top .left .logo img {
+  height: 40px;
+  pointer-events: none;
+  margin-bottom: -10px;
+}
+footer .top .left p {
+  color: var(--blue-dark-80);
+  font-size: 18px;
+  line-height: 1.5;
+  /* width: 60%; */
+  color: var(--white);
+}
+
+/* ======================= TOP RIGHT ======================= */
+footer .top .right {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+footer .top .right .column * {
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+footer .top .right .column h3 {
+  color: var(--white);
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+footer .top .right .column p {
+
+  line-height: 1.5;
+}
+footer .top .right .column a {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .top .right .column .icon-share {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 20px;
+}
+
+/* ================================ BOTTOM ================================ */
+footer .bottom {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 27px 0;
+  position: relative;
+  color: var(--white);
+}
+footer .bottom img {
+  pointer-events: none;
+  margin: 0 5px;
+}

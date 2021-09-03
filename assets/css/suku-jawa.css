@@ -1,0 +1,246 @@
+/* ====================================== UNIVERSAL ====================================== */
+.color-grey-100 {
+  color: var(--grey-100) !important;
+}
+.color-grey-20 {
+  color: var(--grey-20) !important;
+}
+.color-blue-dark-100 {
+  color: var(--blue-dark-100) !important;
+}
+
+.container {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px 100px 50px; /* top r-l bottom */
+  position: relative;
+  width: 100%;
+}
+
+.button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  background: var(--orange-80);
+  border-radius: 24px;
+  /* box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4); */
+  box-sizing: border-box;
+  padding: 15px 120px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  /* margin: 20px 0; */
+  border: none;
+  color: var(--white);
+}
+.button:hover {
+  background: var(--orange-100);
+}
+
+h1.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+h2.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  /* font-size: 2.5rem; */
+  margin: auto auto 44px auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  /* width: 65%; */
+}
+h4.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  /* font-size: 2.5rem; */
+  /* margin: auto auto 44px auto; */
+  padding: 10px 20px;
+  position: relative;
+  /* text-align: center; */
+  text-transform: capitalize;
+  width: 65%;
+  /* background-color: red; */
+}
+
+p.sub-title {
+  color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+  width: 180px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+p.desc {
+  font-size: 18px;
+  /* font-size: 1.25rem; */
+  line-height: 1.5;
+}
+
+span.border-bottom {
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+span.border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  border-bottom: 16px solid var(--orange-80);
+  z-index: -1;
+}
+
+/* ====================================== SECTION 1 ====================================== */
+#sec1.container {
+  /* padding: 0 100px; */
+  background-color: pink;
+
+}
+
+/* ================================ S1 TOP ================================ */
+#sec1.container .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70vh;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+  background-color: cyan;
+}
+
+#sec1.container .top .left,
+#sec1.container .top .right {
+  position: relative;
+  width: 50%;
+}
+
+/* ====================== S1 TOP LEFT ====================== */
+#sec1.container .top .left {
+  margin-top: 52px;
+  background-color: yellow;
+
+}
+
+#sec1.container .top .left .desc {
+  margin-bottom: 30px;
+  width: 75%;
+}
+
+#sec1.container .top .left .desc span {
+  display: block;
+}
+
+#sec1.container .event-box .left,
+#sec1.container .event-box .right {
+  position: relative;
+  width: 50%;
+}
+
+#sec1.container .top .left .event-box {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 18px 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 80%;
+  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+  margin-top: 100px;
+}
+
+.event-box span {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+}
+
+.event-box .sub-left .content-container,
+.event-box .sub-right .content-container {
+  padding-left: 15px;
+}
+
+.sub-right .calendar-icon,
+.sub-left .acara-icon {
+  display: flex;
+  align-items: center;
+}
+
+.event-box p {
+  font-size: 1rem;
+}
+.event-box h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.event-box .sub-left {
+  position: relative;
+  padding-right: 5px;
+  padding-left: 15px;
+}
+.event-box .sub-right {
+  padding-left: 30px;
+}
+.event-box .sub-left::after {
+  content: "";
+  background-color: var(--grey-20);
+  height: 32px;
+  width: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/* ===================== S1 TOP RIGHT ===================== */
+#sec1.container .top .right {
+  position: relative;
+  text-align: center;
+}
+
+#sec1.container .top .right .img-box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-45%); /* buat naik turunnya*/
+  width: 45rem; /* buat ukuran img*/
+  /* background-color: yellow; */
+}
+
+#sec1.container .top .right .img-box img {
+  pointer-events: none;
+  width: 80%;
+  margin-top: 40px;
+}
