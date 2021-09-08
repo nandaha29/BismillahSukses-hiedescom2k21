@@ -734,7 +734,7 @@ justify-content: center;
   justify-content: center;
   margin-top: 40px;
   color: var(--blue-dark-100);
-  background-color: red;
+  /* background-color: red; */
   z-index: 100;
 }
 
@@ -760,7 +760,7 @@ justify-content: center;
 }
 /* ============================== SECTION 5 ============================== */
 #sec5.container .content {
-  background-color: yellow;
+  /* background-color: yellow; */
   margin-bottom: 150px;
 }
 /* ============================== S5 CONTENT ============================== */
