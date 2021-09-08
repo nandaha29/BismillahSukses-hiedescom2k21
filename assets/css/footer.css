@@ -37,6 +37,7 @@ footer .top .right {
 }
 
 /* ======================= TOP  LEFT ======================= */
+
 footer .top .left .logo {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -45,12 +46,13 @@ footer .top .left .logo {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  margin-top: -40px;
+  /* margin-top: -40px; */
 }
 footer .top .left .logo img {
   /* height: 40px; */
   pointer-events: none;
   margin-bottom: -10px;
+  margin-top: -50px;
   height: 60px;
   height: 3.75rem;
 }
@@ -98,6 +100,8 @@ footer .top .right .column a {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  font-weight: 400;
+
 }
 
 footer .top .right .column .icon-share {
@@ -130,6 +134,9 @@ footer .bottom img {
   pointer-events: none;
   margin: 0 5px;
 }
+  footer .bottom p {
+    color: var(--white);
+  }
 /* ===================================== RESPONSIVE ===================================== */
 /* ================================= TABLET ================================= */
 @media screen and (max-width: 768px) {
@@ -140,6 +147,7 @@ footer .bottom img {
   }
   footer .top .left .logo img {
     margin-top: 30px;
+    width: 80%;
   }
   footer .top .left p {
     width: 90%;
@@ -154,6 +162,8 @@ footer .bottom img {
   /* ========================== TOP ========================== */
   footer .top .left {
     width: 50%;
+    margin-top: -90px;
+    /* background-color: aqua; */
   }
 
   footer .top .right {
@@ -191,6 +201,10 @@ footer .bottom img {
   footer .top .left,
   footer .top .left .logo {
     margin-bottom: 24px;
+  }
+    footer .top .left {
+    margin-top: 10px;
+    /* background-color: aqua; */
   }
 
   footer .top .left p {
