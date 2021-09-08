@@ -365,6 +365,7 @@ span.border-bottom::after {
   transition: all 0.5s;
   display: flex;
   flex-direction: column;
+  /* background-color: red; */
 }
 #sec2.container .top .left .card-box .card:hover {
   /* height: 350px; */
@@ -374,7 +375,7 @@ span.border-bottom::after {
   border-radius: none;
   transition: all 0.5s;
 }
-#sec2.container .top .left .card-box .card:hover img{
+#sec2.container .top .left .card-box .card:hover img {
   border-radius: 0px 0px 0px 50%;
 }
 #sec2.container .top .left .card-box .sub-left {
@@ -397,9 +398,10 @@ span.border-bottom::after {
 #sec2.container .top .right {
   text-align: center;
 }
-
 #sec2.container .top .right p.desc {
   margin-bottom: 64px;
+  text-align: left;
+  margin-left: 50px;
 }
 #sec2.container .top .right h2.title {
   margin: 0 0 16px 50px;
@@ -609,7 +611,7 @@ span.border-bottom::after {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
-justify-content: center;
+  justify-content: center;
   margin-top: 32px;
 }
 #sec4.container .content .card-box .card {
@@ -624,7 +626,7 @@ justify-content: center;
   transition: 0.3s;
   width: 400px; /* ini ukuran supaya bisa jadi 3*/
   /* background-color: red; */
- /* width: 370px;  ini ukuran supaya bisa jadi 3*/;
+  /* width: 370px;  ini ukuran supaya bisa jadi 3*/
 }
 
 #sec4.container .content .card-box .card:hover {
