@@ -399,10 +399,10 @@ span.border-bottom::after {
 }
 
 #sec2.container .top .right p.desc {
-  margin-bottom: 50px;
+  margin-bottom: 64px;
 }
 #sec2.container .top .right h2.title {
-  margin: auto auto 10px 100px;
+  margin: 0 0 16px 50px;
   text-align: left;
 }
 
@@ -412,9 +412,8 @@ span.border-bottom::after {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: space-between;
   /* margin: auto; */
-  width: 90%;
   margin-left: 50px;
 }
 #sec2.container .data-box .data {
@@ -447,8 +446,7 @@ span.border-bottom::after {
 /* } */
 #sec3.container .content h2.title {
   align-content: left;
-  /* text-align: left; */
-  /* margin-left: -20px; */
+  margin-bottom: 56px;
 }
 #sec3.container .content p.desc {
   margin: -50px 0 20px 0;
@@ -579,6 +577,7 @@ span.border-bottom::after {
 } */
 #sec4.container .content h2.title {
   text-align: left;
+  margin-bottom: 56px;
 }
 #sec4.container .content p.desc {
   margin: -50px 0 20px 0;
@@ -611,22 +610,18 @@ span.border-bottom::after {
   -ms-flex-pack: distribute;
   justify-content: space-between;
   width: 100%;
-  /* background-color: brown; */
+  margin-top: 32px;
 }
 #sec4.container .content .card-box .card {
   border-radius: 32px;
   box-sizing: border-box;
-  /* margin: 16px 0 16px 0; ini yang ukuran awal*/
-  margin: 16px 15px 16px 0;
-
+  margin-bottom: 24px;
   padding: 24px;
   text-align: center;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  /* width: 400px; ini ukuran awal*/
-  width: 327px; /* ini ukuran supaya bisa jadi 3*/
-  /* background-color: red; */
+  width: 370px; /* ini ukuran supaya bisa jadi 3*/;
 }
 
 #sec4.container .content .card-box .card:hover {
@@ -673,12 +668,15 @@ span.border-bottom::after {
 #sec4.container .content .card-box .card .category p.rating {
   background-color: var(--blue);
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   border-radius: 30px;
   color: var(--white);
 }
 #sec4.container .content .card-box .card .category img {
   width: 26px;
+  margin-right: 8px;
 }
 
 /* ============================== S4 CARD-BOX CARD DETAIL ============================== */
@@ -726,13 +724,14 @@ span.border-bottom::after {
 
 /* ============================== S4 BOTTOM ============================== */
 #sec4.container .content div.bottom {
-  position: relative;
+  /* position: relative; */
   text-align: center;
-  /* background-color: aqua; */
   display: flex;
   justify-content: center;
   margin-top: 40px;
   color: var(--blue-dark-100);
+  background-color: red;
+  z-index: 100;
 }
 
 #sec4.container .content div.bottom a {
@@ -740,18 +739,19 @@ span.border-bottom::after {
   align-items: center;
   background-color: var(--white);
   border: 2px solid var(--blue-dark-100);
-  /* width: 25%; */
+  border-radius: 24px;
 }
 #sec4.container .content div.bottom a.button {
-  padding: 15px 80px;
+  padding: 12px 24px;
 }
 
 #sec4.container .content div.bottom img {
-  width: 26px;
+  width: 24px;
+  margin-left: 6px;
 }
 /* ============================== SECTION 5 ============================== */
 #sec5.container .content {
-  /* background-color: yellow; */
+  background-color: yellow;
   margin-bottom: 150px;
 }
 /* ============================== S5 CONTENT ============================== */
