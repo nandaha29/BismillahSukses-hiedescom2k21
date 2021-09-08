@@ -40,6 +40,8 @@
       </div>
     </div> -->
 
+
+
   <!-- =============================== NAVBAR =============================== -->
   <nav>
     <a href="index.html" class="logo">
@@ -239,14 +241,14 @@
         Yuk, beli oleh - oleh khas dari masing - masing daerah.
       </p>
       <div class="top">
-        <a class="button active">Semua</a>
-        <a class="button">Makanan</a>
-        <a class="button">Kain</a>
-        <a class="button">Topeng & Patung</a>
+        <a class="button active list" data-filter="semua">Semua</a>
+        <a class="button list" data-filter="makanan">Makanan</a>
+        <a class="button list" data-filter="kain">Kain</a>
+        <a class="button list" data-filter="topeng">Topeng & Patung</a>
       </div>
 
       <div class="card-box">
-        <div class="card">
+        <div class="card itemBox topeng">
           <div class="img-box">
             <img src="assets/img/belanja/Topeng Kidal.png" alt="Topeng Kidal" />
           </div>
@@ -272,7 +274,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card itemBox kain">
           <div class="img-box">
             <img src="assets/img/belanja/Jarik Jogja.png" alt="Jarik Jogja" />
           </div>
@@ -298,7 +300,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card itemBox topeng">
           <div class="img-box">
             <img src="assets/img/belanja/Patung Ganesha.png" alt="Patung Ganesha" />
           </div>
@@ -324,7 +326,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card itemBox makanan">
           <div class="img-box">
             <img src="assets/img/belanja/Rendang.png" alt="Rendang" />
           </div>
@@ -350,7 +352,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card itemBox makanan">
           <div class="img-box">
             <img src="assets/img/belanja/Lumpia.png" alt="Lumpia" />
           </div>
@@ -376,7 +378,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card itemBox kain">
           <div class="img-box">
             <img src="assets/img/belanja/Songket Minangkabau.png" alt="Songket Minangkabau" />
           </div>
@@ -464,12 +466,12 @@
           <img src="assets/img/Nav - Logo White.svg" alt="Cultured" />
         </a>
         <p>
-          Cultured adalah website yang menyajikan<br> informasi untuk mengenal suku di<br> Indonesia dalam satu situs.
+          Cultured adalah website yang menyajikan informasi untuk mengenal suku di Indonesia dalam satu situs.
         </p>
       </div>
 
       <div class="right">
-        <div class="column">
+        <div class="column ">
           <h3>CULTURED</h3>
           <a href="#">Beranda</a>
           <a href="#">Suku</a>
@@ -488,7 +490,7 @@
 
         </div>
 
-        <div class="column">
+        <div class="column bawah">
           <h3>BAGIKAN</h3>
           <p>Yuk bantu bagikan situs website<br> ini ke sosial mediamu untuk<br> menjaga kelestarian budaya kita!</p>
           <div class="icon-share">
@@ -513,16 +515,17 @@
     </div>
 
     <div class="bottom">
-      Create with
-      <img src="assets/img/icon/Icon - Heart.svg" alt="Heart" /> by
-      Bismillah Sukses Team
+      <p> Create with
+        <img src="assets/img/icon/Icon - Heart.svg" alt="Heart" /> by
+        Bismillah Sukses Team
+      </p>
     </div>
   </footer>
 
 
   <!-- ============================== JS SCRIPT ============================== -->
   <script src="assets/js/navbar.js"></script>
-  <!-- <script src="assets/js/search.js"></script> -->
+  <script src="assets/js/filter.js"></script>
   <!-- <script src="assets/js/scrollAnimation.js"></script> -->
 </body>
 

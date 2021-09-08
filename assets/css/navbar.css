@@ -15,7 +15,7 @@ font-family: 'Playfair Display', serif;
 
   --orange-100: #e28721;
   --orange-80: #ffaa4c;
-  --primary-bg: #fafafa;
+  --primary-bg: #fff;
   --card-bg: #ffff;
   --white: #fff;
 }
@@ -206,7 +206,7 @@ nav ul div li a:hover::after {
   border-bottom: 4px solid var(--blue);
   width: 30px;
   height: 200px;
-  background-color: red;
+  /* background-color: red; */
   border-radius: 3px;
 }
 
