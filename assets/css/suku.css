@@ -183,7 +183,6 @@ span.border-bottom::after {
   /* background-color: aqua; */
   /* background-color: var(--white); */
   background-color: var(--orange-80);
-
 }
 .event-box span {
   width: 70%;
@@ -194,9 +193,8 @@ span.border-bottom::after {
   align-items: center;
 }
 .event-box span h4.title {
-    color: var(--white);
+  color: var(--white);
 }
-
 
 /* ===================== S1 TOP RIGHT ===================== */
 #sec1.container .top .right {
@@ -332,7 +330,7 @@ span.border-bottom::after {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 400px; /* ini ukuran supaya bisa jadi 3*/
+  width: 370px; /* ini ukuran supaya bisa jadi 3*/
   /* background-color: red; */
   /* width: 370px;  ini ukuran supaya bisa jadi 3*/
 }
