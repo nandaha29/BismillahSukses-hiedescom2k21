@@ -1,0 +1,412 @@
+/* ====================================== UNIVERSAL ====================================== */
+.color-grey-100 {
+  color: var(--grey-100) !important;
+}
+.color-grey-20 {
+  color: var(--grey-20) !important;
+}
+.color-blue-dark-100 {
+  color: var(--blue-dark-100) !important;
+}
+.color-blue {
+  color: var(--blue) !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.container {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px 100px 50px; /* top r-l bottom */
+  position: relative;
+  width: 100%;
+  /* background-color: khaki; */
+}
+
+.button {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  background: var(--orange-80);
+  border-radius: 24px;
+  /* box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4); */
+  box-sizing: border-box;
+  padding: 15px 120px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  /* margin: 20px 0; */
+  border: none;
+  color: var(--white);
+}
+.button:hover {
+  background: var(--orange-100);
+}
+
+/* JUDUL PALING BESAR */
+h1.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  /* background-color: aqua; */
+}
+
+/* JUDUL SECTION  */
+h2.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-size: 3rem;
+  margin: auto auto 44px auto;
+  /* padding: 20px; */
+  position: relative;
+  /* text-align: left; */
+  text-transform: capitalize;
+  /* width: 65%; */
+}
+
+/* YG BUTUH BESAR AJA */
+h3.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-size: 2rem;
+  padding: 10px 20px;
+  position: relative;
+}
+h4.title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* INI BUAT DESKRIPSI */
+p.desc {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+p.small {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p.sub-title {
+  color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+  width: 180px;
+  padding-bottom: 5px;
+  /* text-transform: uppercase; */
+}
+
+span.border-bottom {
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+span.border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  border-bottom: 16px solid var(--orange-80);
+  z-index: -1;
+}
+
+/* ====================================== SECTION 1 ====================================== */
+#sec1.container {
+  padding: 0;
+}
+
+/* ================================ S1 TOP ================================ */
+#sec1.container .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  /* background-color: yellow; */
+}
+#sec1.container .top .left,
+#sec1.container .top .right {
+  position: relative;
+  width: 50%;
+}
+
+/* ====================== S1 TOP LEFT ====================== */
+#sec1.container .top .left {
+  margin-top: 150px;
+  padding-left: 100px;
+  /* background-color: aquamarine; */
+}
+#sec1.container .top .left .desc {
+  margin-bottom: 30px;
+  width: 85%;
+  /* background-color: blanchedalmond; */
+}
+/* #sec1.container .top .left .desc span {
+  display: block;
+} */
+#sec1.container .top .left .sub-title {
+  /* background-color: pink; */
+  width: 28%;
+}
+#sec1.container .top .left h1.title {
+  /* background-color: pink; */
+  width: 80%;
+}
+
+#sec1.container .top .left .event-box {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 18px 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 75%;
+  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+  margin-top: 100px;
+  /* background-color: aqua; */
+  background-color: var(--orange-80);
+}
+
+.event-box span {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  /* background-color: aqua; */
+  background-color: var(--orange-80);
+}
+#sec1.container .top .left .event-box span h4 {
+  color: white;
+}
+
+/* ===================== S1 TOP RIGHT ===================== */
+#sec1.container .top .right {
+  position: relative;
+  text-align: center;
+}
+
+#sec1.container .top .right .img-box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-45%); /* buat naik turunnya*/
+  width: 45rem; /* buat ukuran img*/
+  /* background-color: yellow; */
+}
+
+#sec1.container .top .right .img-box img {
+  pointer-events: none;
+  width: 80%;
+  margin-top: 40px;
+  -webkit-animation: up-down 2.5s infinite;
+  animation: up-down 2.5s infinite;
+  display: inline-block;
+}
+
+/* ======================= ANIMATION ======================= */
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+/* ====================================== SECTION 2 ====================================== */
+/* #sec3.container .content {
+  background-color: aqua;
+} */
+/* ============================== S2 CARD-BOX ============================== */
+#sec3.container .content .card-box,
+#sec2.container .content .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
+  background-color: burlywood;
+  height: auto;
+}
+#sec3.container .content .card-box .card,
+#sec2.container .content .card-box .card {
+  border-radius: 32px;
+  box-sizing: border-box;
+  /* margin: 16px 0 16px 0; ini yang ukuran awal*/
+  margin: 16px;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 370px; /* ini ukuran supaya bisa jadi 3*/
+  /* background-color: red; */
+}
+#sec3.container .content .card-box .card:hover,
+#sec2.container .content .card-box .card:hover {
+  background: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sec3.container .content .card-box .card .img-box,
+#sec2.container .content .card-box .card .img-box {
+  border-radius: 20px;
+  height: 200px;
+  margin: auto auto 15px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+#sec3.container .content .card-box .card .img-box:hover,
+#sec2.container .content .card-box .card .img-box:hover {
+  box-shadow: none;
+}
+#sec3.container .content .card-box .card .img-box img,
+#sec2.container .content .card-box .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 120%;
+  pointer-events: none;
+}
+/* ============================== S4 CARD-BOX CATEGORY ============================== */
+#sec3.container .content .card-box .card .category,
+#sec2.container .content .card-box .card .category {
+  justify-content: space-between;
+  margin: 20px 0;
+  display: flex;
+  box-sizing: border-box;
+}
+#sec3.container .content .card-box .card .category p,
+#sec2.container .content .card-box .card .category p {
+  padding-top: 12px;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+#sec3.container .content .card-box .card .category p.rating,
+#sec2.container .content .card-box .card .category p.rating {
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--white);
+  align-items: center;
+}
+#sec3.container .content .card-box .card .category img,
+#sec2.container .content .card-box .card .category img {
+  width: 26px;
+  margin-right: 8px;
+}
+
+/* ============================== S4 CARD-BOX CARD DETAIL ============================== */
+#sec3.container .content .card-box .card .detail,
+#sec2.container .content .card-box .card .detail {
+  font-size: 18px;
+  text-align: start;
+}
+#sec3.container .content .card-box .card .detail h3,
+#sec2.container .content .card-box .card .detail h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+#sec3.container .content .card-box .card .detail p,
+#sec2.container .content .card-box .card .detail p {
+  margin: 10px 0;
+}
+
+/* ============================== S4 CARD-BOX CARD DETAIL BOT ============================== */
+#sec3.container .content .card-box .card .detail .bot,
+#sec2.container .content .card-box .card .detail .bot {
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  margin-top: 32px;
+}
+#sec3.container .content .card-box .card .detail .bot a.button,
+#sec2.container .content .card-box .card .detail .bot a.button {
+  background-color: var(--orange-80);
+  border-radius: 32px;
+  font-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+}
+#sec3.container .content .card-box .card .detail .bot a:hover,
+#sec2.container .content .card-box .card .detail .bot a:hover {
+  background-color: var(--orange-100);
+}
+#sec3.container .content .card-box .card .detail .bot h4,
+#sec2.container .content .card-box .card .detail .bot h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue);
+}

@@ -510,6 +510,7 @@ span.border-bottom::after {
   margin: 35px 0 10px 0;
   pointer-events: auto;
   background-color: aqua;
+
 }
 #sec3.container .content .card-box .card a button {
   background-color: red;
@@ -519,6 +520,7 @@ span.border-bottom::after {
   font-size: 1rem;
   color: var(--white);
   margin-top: 60px;
+  
 }
 
 #sec3.container .content .card-box .card:hover {
@@ -540,6 +542,7 @@ span.border-bottom::after {
 
 #sec3.container .content .card-box .card .img-box:hover {
   box-shadow: none;
+
 }
 
 #sec3.container .content .card-box .card .img-box img {
@@ -550,6 +553,7 @@ span.border-bottom::after {
   transform: translateX(-50%);
   height: 100%;
   pointer-events: none;
+
 }
 
 #sec3.container .content .card-box .card h3 {
@@ -1026,6 +1030,10 @@ span.border-bottom::after {
     margin: -30px 0 20px 200px;
     width: 40%;
   }
+  #sec3.container .content .card-box .card {
+    flex-shrink: 0; /*  Supaya bisa pas 1 card*/
+  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+  }
 
   /* ====================================== SECTION 4 ====================================== */
   /* #sec4.container {
@@ -1083,7 +1091,6 @@ span.border-bottom::after {
 
   .button {
     font-size: 0.875rem;
-    padding: 14px 30px;
   }
 
   h1.title {
@@ -1190,7 +1197,7 @@ span.border-bottom::after {
   #sec2.container .top .left .card-box .card img {
     width: 100%;
   }
-    #sec2.container .top .left .card-box .card p {
+  #sec2.container .top .left .card-box .card p {
     width: 70%;
   }
 
@@ -1230,18 +1237,16 @@ span.border-bottom::after {
     /* background-color: red; */
     width: 100%;
   }
-    #sec2.container .data-box {
-      margin-top: 30px;
+  #sec2.container .data-box {
+    margin-top: 30px;
     margin-left: 5px;
     width: 100%;
     text-align: center;
     /* background-color: yellow; */
-
   }
   #sec2.container .data-box .data h3.counter {
     color: var(--blue);
     font-size: 1.6rem;
-
   }
   #sec2.container .data-box .data p {
     font-size: 16px;
@@ -1261,18 +1266,14 @@ span.border-bottom::after {
     margin: -50px 0 20px 75px;
     width: 100%;
   }
-  /* DISINI CARDNYA BELUM BISA 1 SATU */
-    #sec3.container .content .card-box  {
-    background-color: yellow;
-    height: 700px;
-    }
-
-    #sec3.container .content .card-box .card {
-    height: 600px;
+  #sec3.container .content .card-box {
+    /* background-color: yellow; */
+    height: 500px;
+  }
+  #sec3.container .content .card-box .card {
+    height: 450px;
     width: 100%;
     background-color: white;
-    /* margin-left: 0; */
-    background-color: coral;
   }
   /* ====================================== SECTION 4 ====================================== */
   #sec4.container {
@@ -1283,7 +1284,6 @@ span.border-bottom::after {
   #sec4.container .content h2.title {
     text-align: center;
     width: 100%;
-    /* background-color: aqua; */
     margin-bottom: -10px;
   }
   #sec4.container .content p.desc {
