@@ -866,10 +866,10 @@ background-color: aqua;
   }
 
   /* ======================= SECTION 1 ======================= */
-  #sec1.container {
-    /* background-color: pink; */
-    height: 140vh;
-  }
+  /* #sec1.container {
+    background-color: pink; */
+    /* height: 200vh; */
+  /* } */
 
   #sec1.container .top {
     height: auto;
@@ -947,9 +947,10 @@ background-color: aqua;
   }
 
   /* ======================= SECTION 2 ======================= */
-  /* #sec2.container { */
-  /* background-color: aqua; */
-  /* } */
+  /* #sec2.container {
+  background-color: aqua;
+  height: auto;
+  } */
 
   #sec2.container .top .left,
   #sec2.container .top .right {
@@ -963,7 +964,7 @@ background-color: aqua;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-bottom: 30px;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     /* text-align: center; */
     margin: 0;
   }
@@ -1065,7 +1066,7 @@ background-color: aqua;
     transition: 0.3s;
     /* background-color: red; */
     width: 320px;
-    
+
   }
 
   /* ============================== SECTION 5 ============================== */
@@ -1184,7 +1185,7 @@ background-color: aqua;
   #sec2.container {
     height: auto;
     /* background-color: aqua; */
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
   }
   #sec2.container .top .left,
   #sec2.container .top .right {

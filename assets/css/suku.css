@@ -162,38 +162,25 @@ span.border-bottom::after {
   width: 75%;
 }
 
-#sec1.container .top .left .event-box {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: none;
+#sec1.container .top .left button.btn {
+  background: var(--orange-80);
   border-bottom-left-radius: 40px;
   border-top-right-radius: 40px;
   box-sizing: border-box;
-  justify-content: space-between;
-  padding: 18px 32px;
+  justify-content: center;
+  padding: 20px 120px;
+  text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 70%;
-  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
-  margin-top: 100px;
-  /* background-color: aqua; */
-  /* background-color: var(--white); */
-  background-color: var(--orange-80);
-}
-.event-box span {
-  width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--orange-80);
-  align-items: center;
-}
-.event-box span h4.title {
+  font-size: 18px;
+  border: none;
   color: var(--white);
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 50px;
+}
+#sec1.container .top .left button.btn:hover {
+  background: var(--orange-100);
 }
 
 /* ===================== S1 TOP RIGHT ===================== */
@@ -204,11 +191,11 @@ span.border-bottom::after {
 
 #sec1.container .top .right .img-box {
   position: absolute;
-  right: 0;
+  right: 1;
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-45%); /* buat naik turunnya*/
-  width: 45rem; /* buat ukuran img*/
+  width: 43rem; /* buat ukuran img*/
   /* background-color: yellow; */
 }
 
@@ -219,6 +206,39 @@ span.border-bottom::after {
   -webkit-animation: up-down 2.5s infinite;
   animation: up-down 2.5s infinite;
   display: inline-block;
+}
+/* ======================= ANIMATION ======================= */
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  50% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 }
 
 /* ====================================== SECTION 2 ====================================== */
@@ -246,12 +266,11 @@ span.border-bottom::after {
   margin-top: 32px;
   height: auto;
   justify-content: space-around;
-
 }
 
 #sec2.container .content .card-box img {
-   width: 380px;
-   border-radius: 32px;
+  width: 380px;
+  border-radius: 32px;
 }
 #sec2.container .content .card-box .card {
   width: 380px;
@@ -399,7 +418,6 @@ span.border-bottom::after {
 }
 #sec3.container .content .card-box .card .detail p {
   margin: 10px 0;
-
 }
 
 /* ============================== S4 CARD-BOX CARD DETAIL BOT ============================== */
