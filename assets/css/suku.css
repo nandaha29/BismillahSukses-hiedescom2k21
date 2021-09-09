@@ -223,13 +223,9 @@ span.border-bottom::after {
 
 /* ====================================== SECTION 2 ====================================== */
 #sec2.container {
-  background-color: pink;
+  /* background-color: pink; */
   box-sizing: border-box;
 }
-
-/* #sec2.container .content {
-  background-color: yellow;
-} */
 
 #sec2.container .content h2.title {
   align-content: left;
@@ -240,34 +236,25 @@ span.border-bottom::after {
 }
 
 #sec2.container .content .card-box {
-  background-color: red;
+  /* background-color: red; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
+  width: auto;
   margin-top: 32px;
-}
-
-/* .card-box {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: var(--white);
-  align-items: center;
-} */
-
-#sec2.container .content .card-box img {
-  /* width: 20rem; */
-  width: 400px;
+  height: auto;
   justify-content: space-around;
 
 }
+
+#sec2.container .content .card-box img {
+   width: 380px;
+   border-radius: 32px;
+}
 #sec2.container .content .card-box .card {
-  width: 300px;
+  width: 380px;
   height: 260px;
   border-radius: 30px;
   overflow: hidden;
@@ -277,7 +264,7 @@ span.border-bottom::after {
   flex-direction: column;
   background-color: var(--white);
   padding: 20px;
-  margin: 1px;
+  margin: 10px;
 }
 #sec2.container .content .card-box .card:hover {
   /* height: 350px; */
@@ -293,25 +280,32 @@ span.border-bottom::after {
 
 .card-box .card p.desc {
   font-size: 18px;
-  padding-top: 70px;
-  background-color: yellow;
+  padding-top: 60px;
+  /* background-color: yellow; */
   width: 100%;
 }
 
-.card-box .card h3.title {
+#sec2.container .card-box .card h3.title {
   font-family: "Playfair Display", serif;
-  margin: 3px 0 0 0;
+  margin: 5px 0 0 0;
   font-weight: 800;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: blanchedalmond; */
+  font-size: 24px;
 }
 
 /* ====================================== SECTION 3 ====================================== */
 /* #sec3.container .content {
   background-color: aqua;
 } */
-/* ============================== S4 CARD-BOX ============================== */
+#sec3.container .content h2.title {
+  font-family: "Playfair Display", serif;
+  margin: 5px 0 16px 0;
+  /* background-color: blanchedalmond; */
+}
+/* ============================== S3 CARD-BOX ============================== */
 #sec3.container .content .card-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,12 +393,13 @@ span.border-bottom::after {
   text-align: start;
 }
 #sec3.container .content .card-box .card .detail h3 {
-  margin: 10px 0;
+  margin: 16px 0;
   font-size: 24px;
   font-weight: 700;
 }
 #sec3.container .content .card-box .card .detail p {
   margin: 10px 0;
+
 }
 
 /* ============================== S4 CARD-BOX CARD DETAIL BOT ============================== */
