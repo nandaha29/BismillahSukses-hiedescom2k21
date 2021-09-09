@@ -332,7 +332,6 @@ span.border-bottom::after {
   transition: 0.3s;
   width: 370px; /* ini ukuran supaya bisa jadi 3*/
   /* background-color: red; */
-  /* width: 370px;  ini ukuran supaya bisa jadi 3*/
 }
 
 #sec3.container .content .card-box .card:hover {
