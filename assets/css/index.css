@@ -303,10 +303,11 @@ span.border-bottom::after {
 }
 
 /* ====================================== SECTION 2 ====================================== */
-/* #sec2.container{ */
+#sec2.container{
 /* background-color: pink; */
-/* height: 50vh; */
-/* } */
+    height: auto;
+padding-bottom: 150px;
+}
 
 #sec2.container .top {
   -webkit-box-align: center;
@@ -442,13 +443,15 @@ span.border-bottom::after {
 /* ====================================== SECTION 3 ====================================== */
 #sec3.container {
   /* background-color: rosybrown; */
-  height: 120vh;
+  /* height: 120vh; */
+    height: auto;
+
 }
 
 /* ============================== S3 CONTENT ============================== */
-/* #sec3.container .content { */
-/* background-color: aqua; */
-/* } */
+/* #sec3.container .content {
+background-color: aqua;
+} */
 #sec3.container .content h2.title {
   align-content: left;
   margin-bottom: 56px;
@@ -578,7 +581,9 @@ span.border-bottom::after {
 /* ====================================== SECTION 4 ====================================== */
 #sec4.container {
   /* background-color: khaki; */
-  height: 200vh;
+  /* height: 200vh; */
+    height: auto;
+
 }
 
 /* ============================== S4 CONTENT ============================== */
@@ -1054,11 +1059,12 @@ span.border-bottom::after {
     width: 100%;
   }
   #sec4.container .content .card-box .card {
-    margin: 8px 0;
+    margin: 5px;
     -webkit-transition: 0.3s;
     box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
     transition: 0.3s;
     /* background-color: red; */
+    width: 320px;
   }
 
   /* ============================== SECTION 5 ============================== */
@@ -1125,6 +1131,9 @@ span.border-bottom::after {
   }
 
   /* ======================= SECTION 1 ======================= */
+  #sec1.container{
+    height: auto;
+  }
   #sec1.container .top .left,
   #sec1.container .top .right {
     width: 100%;
@@ -1156,7 +1165,6 @@ span.border-bottom::after {
     margin-top: -5px;
     /* justify-content: center; */
     margin-left: -0px;
-    /* margin-right: 50px; */
   }
   #sec1.container .top .left .event-box .sub-right .calendar-icon img,
   #sec1.container .top .left .event-box .sub-left .acara-icon img {
@@ -1173,7 +1181,7 @@ span.border-bottom::after {
 
   /* ======================= SECTION 2 ======================= */
   #sec2.container {
-    min-height: auto;
+    height: auto;
     /* background-color: aqua; */
     padding-bottom: 200px;
   }
@@ -1257,7 +1265,7 @@ span.border-bottom::after {
   /* ====================================== SECTION 3 ====================================== */
   #sec3.container {
     /* background-color: rosybrown; */
-    height: 150vh;
+    height: auto;
   }
   #sec3.container .content h2.title {
     text-align: center;
@@ -1275,11 +1283,12 @@ span.border-bottom::after {
     width: 100%;
     background-color: white;
   }
+
   /* ====================================== SECTION 4 ====================================== */
   #sec4.container {
     /* background-color: khaki; */
     text-align: center;
-    height: 3500px;
+    height: auto;
   }
   #sec4.container .content h2.title {
     text-align: center;
@@ -1293,9 +1302,28 @@ span.border-bottom::after {
   #sec4.container .content .top a.button {
     display: none;
   }
-  #sec4.container .content .card-box .card {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  }
+
+/*  INI BUAT COROUSEL ==========================================================*/
+  #sec4.container .content .card-box {
+  margin: auto;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  overflow-x: auto;
+  padding: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+  scroll-behavior: smooth;
+  align-items: stretch;
+  /*  BISA COROUSEL */
+
+  /* background-color: red; */
+  overflow: auto;
+  overflow-y: hidden;
+}
+#sec4.container .content .card-box .card {
+    flex-shrink: 0; /*  Supaya bisa pas 1 card*/
+  } 
   /* ============================== SECTION 5 ============================== */
   #sec5.container .content {
     margin: 200px 0;
@@ -1305,7 +1333,9 @@ span.border-bottom::after {
   #sec5.container .content h2.title {
     text-align: center;
     width: 100%;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+    height: auto;
+
   }
   #sec5.container .content p.desc {
     margin: -50px auto 90px;
