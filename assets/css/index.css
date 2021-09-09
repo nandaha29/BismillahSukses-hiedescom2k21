@@ -483,9 +483,11 @@ span.border-bottom::after {
 
   border-radius: 50px;
   visibility: hidden;
+  /* opacity: 0.25; */
 }
 .card-box::-webkit-scrollbar-thumb:hover {
   visibility: visible;
+  /* opacity: 1; */
 }
 
 #sec3.container .content .card-box .card {
@@ -614,6 +616,7 @@ span.border-bottom::after {
   width: 100%;
   justify-content: center;
   margin-top: 32px;
+  height: auto;
 }
 #sec4.container .content .card-box .card {
   border-radius: 32px;
@@ -625,7 +628,7 @@ span.border-bottom::after {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 400px; /* ini ukuran supaya bisa jadi 3*/
+  width: 370px; /* ini ukuran supaya bisa jadi 3*/
   /* background-color: red; */
   /* width: 370px;  ini ukuran supaya bisa jadi 3*/
 }
@@ -670,6 +673,8 @@ span.border-bottom::after {
 }
 #sec4.container .content .card-box .card .category p {
   padding-top: 12px;
+  /* font-size: 18px; */
+  /* font-size: 1.125rem; */
 }
 #sec4.container .content .card-box .card .category p.rating {
   background-color: var(--blue);
