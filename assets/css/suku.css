@@ -79,13 +79,8 @@ h3.title {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-size: 2rem;
-  /* margin: auto auto 44px auto; */
   padding: 10px 20px;
   position: relative;
-  /* text-align: center; */
-  /* text-transform: capitalize; */
-  /* width: 65%; */
-  /* background-color: red; */
 }
 h4.title {
   font-size: 24px;
@@ -132,80 +127,309 @@ span.border-bottom::after {
 #sec1.container {
   padding: 0;
 }
+#sec1.container .top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  /* background-color: yellow; */
+}
+#sec1.container .top .left,
+#sec1.container .top .right {
+  position: relative;
+  width: 50%;
+}
+/* ====================== S1 TOP LEFT ====================== */
+#sec1.container .top .left {
+  margin-top: 150px;
+  padding-left: 100px;
+  /* background-color: aquamarine; */
+}
+#sec1.container .top .left h1.title {
+  width: 70%;
+}
 
-/* ============================== S4 CONTENT ============================== */
+#sec1.container .top .left .desc {
+  margin-bottom: 30px;
+  width: 75%;
+}
 
-#sec4.container .content .card-box {
+#sec1.container .top .left .event-box {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 18px 32px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 70%;
+  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+  margin-top: 100px;
+  /* background-color: aqua; */
+  /* background-color: var(--white); */
+  background-color: var(--orange-80);
+}
+.event-box span {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--orange-80);
+  align-items: center;
+}
+.event-box span h4.title {
+  color: var(--white);
+}
+
+/* ===================== S1 TOP RIGHT ===================== */
+#sec1.container .top .right {
+  position: relative;
+  text-align: center;
+}
+
+#sec1.container .top .right .img-box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-45%); /* buat naik turunnya*/
+  width: 45rem; /* buat ukuran img*/
+  /* background-color: yellow; */
+}
+
+#sec1.container .top .right .img-box img {
+  pointer-events: none;
+  width: 80%;
+  margin-top: 40px;
+  -webkit-animation: up-down 2.5s infinite;
+  animation: up-down 2.5s infinite;
+  display: inline-block;
+}
+
+/* ====================================== SECTION 2 ====================================== */
+#sec2.container {
+  background-color: pink;
+  box-sizing: border-box;
+}
+
+/* #sec2.container .content {
+  background-color: yellow;
+} */
+
+#sec2.container .content h2.title {
+  align-content: left;
+  margin-bottom: 56px;
+}
+#sec2.container .content p.desc {
+  margin: -50px 0 20px 0;
+}
+
+#sec2.container .content .card-box {
+  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: auto;
-  width: 80%;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
 }
 
-#sec4.container .content .card-box .card {
-  border-radius: 20px;
-  box-sizing: border-box;
-  display: block;
-  height: 400px;
+/* .card-box {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+} */
+
+#sec2.container .content .card-box img {
+  /* width: 20rem; */
+  width: 400px;
+}
+#sec2.container .content .card-box .card {
+  width: 400px;
+  height: 260px;
+  border-radius: 30px;
   overflow: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
   padding: 20px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  width: 30%;
+  margin: 1px;
+}
+#sec2.container .content .card-box .card:hover {
+  /* height: 350px; */
+  height: 450px;
+}
+#sec2.container .content .card-box .card img {
+  border-radius: none;
+  transition: all 0.5s;
+}
+#sec2.container .content .card-box .card:hover img {
+  border-radius: 0px 0px 0px 50%;
 }
 
-#sec4.container .content .card-box .card:hover {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
-}
-
-#sec4.container .content .card-box .card .img-box {
-  border-radius: 20px;
-  box-shadow: 0px 0px 16px rgba(46, 60, 64, 0.4);
-  height: 300px;
-  margin: auto;
-  margin-bottom: 25px;
-  overflow: hidden;
-  position: relative;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+.card-box .card p.desc {
+  font-size: 18px;
+  padding-top: 70px;
+  background-color: yellow;
   width: 100%;
 }
 
-#sec4.container .content .card-box .card:hover .img-box {
-  height: 150px;
+.card-box .card h3.title {
+  font-family: "Playfair Display", serif;
+  margin: 3px 0 0 0;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#sec4.container .content .card-box .card .img-box img {
-  height: 100%;
-  left: 50%;
-  pointer-events: none;
+/* ====================================== SECTION 3 ====================================== */
+/* #sec3.container .content {
+  background-color: aqua;
+} */
+/* ============================== S4 CARD-BOX ============================== */
+#sec3.container .content .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
+}
+#sec3.container .content .card-box .card {
+  border-radius: 32px;
+  box-sizing: border-box;
+  /* margin: 16px 0 16px 0; ini yang ukuran awal*/
+  margin: 16px;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 370px; /* ini ukuran supaya bisa jadi 3*/
+  /* background-color: red; */
+}
+
+#sec3.container .content .card-box .card:hover {
+  background: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sec3.container .content .card-box .card .img-box {
+  border-radius: 20px;
+  height: 200px;
+  margin: auto auto 15px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+#sec3.container .content .card-box .card .img-box:hover {
+  box-shadow: none;
+}
+
+#sec3.container .content .card-box .card .img-box img {
   position: absolute;
   top: 0;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  height: 120%;
+  pointer-events: none;
+}
+/* ============================== S4 CARD-BOX CATEGORY ============================== */
+#sec3.container .content .card-box .card .category {
+  justify-content: space-between;
+  margin: 20px 0;
+  display: flex;
+  box-sizing: border-box;
+}
+#sec3.container .content .card-box .card .category p {
+  padding-top: 12px;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+#sec3.container .content .card-box .card .category p.rating {
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: var(--white);
+  align-items: center;
+}
+#sec3.container .content .card-box .card .category img {
+  width: 26px;
+  margin-right: 8px;
 }
 
-#sec4.container .content .card-box .card h3 {
+/* ============================== S4 CARD-BOX CARD DETAIL ============================== */
+#sec3.container .content .card-box .card .detail {
+  font-size: 18px;
+  text-align: start;
+}
+#sec3.container .content .card-box .card .detail h3 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+#sec3.container .content .card-box .card .detail p {
+  margin: 10px 0;
+}
+
+/* ============================== S4 CARD-BOX CARD DETAIL BOT ============================== */
+#sec3.container .content .card-box .card .detail .bot {
+  justify-content: space-between;
+  display: flex;
+  height: 50px;
+  margin-top: 32px;
+}
+#sec3.container .content .card-box .card .detail .bot a.button {
+  background-color: var(--orange-80);
+  border-radius: 32px;
+  font-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+}
+#sec3.container .content .card-box .card .detail .bot a:hover {
+  background-color: var(--orange-100);
+}
+#sec3.container .content .card-box .card .detail .bot h4 {
+  margin-top: 10px;
   font-size: 24px;
   font-size: 1.5rem;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
-  margin-top: 24px;
-  margin-top: 1.5rem;
-}
-
-#sec4.container .content .card-box .card .detail p:first-child {
-  color: var(--grey-60);
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
-  text-align: left;
+  font-weight: 600;
+  color: var(--blue);
 }
