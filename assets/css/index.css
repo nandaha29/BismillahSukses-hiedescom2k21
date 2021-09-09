@@ -621,7 +621,7 @@ span.border-bottom::after {
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  width: 370px; /* ini ukuran supaya bisa jadi 3*/;
+  width: 370px; /* ini ukuran supaya bisa jadi 3*/
 }
 
 #sec4.container .content .card-box .card:hover {
@@ -828,6 +828,11 @@ span.border-bottom::after {
     font-size: 3rem;
   }
 
+  #sec3.container .content h2.title {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
   span.border-bottom::after {
     content: "";
     position: absolute;
@@ -988,14 +993,22 @@ span.border-bottom::after {
     text-align: center;
   }
   #sec3.container .content p.desc {
-    margin: -30px 0 20px 200px;
-    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 16px;
+    width: 100%;
   }
 
   /* ====================================== SECTION 4 ====================================== */
   /* #sec4.container {
   background-color: khaki;
 } */
+
+  #sec4.container .content .top {
+    display: flex;
+    justify-content: center;
+  }
+
   #sec4.container .content h2.title {
     text-align: center;
     width: 100%;
@@ -1011,7 +1024,7 @@ span.border-bottom::after {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    /* background-color: red; */
+    width: 327px;
   }
 
   /* ============================== SECTION 5 ============================== */
@@ -1136,11 +1149,20 @@ span.border-bottom::after {
     width: 100%;
   }
   #sec2.container .top .left .card-box {
-    height: 300px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
   #sec2.container .top .left .card-box .card {
     height: 400px;
     /* background-color: coral; */
+  }
+
+  #sec2.container .top .left .card-box .sub-left {
+    position: relative;
+    margin-top: 24px;
+    margin-left: 0;
   }
 
   .card-box .sub-right p.desc,
