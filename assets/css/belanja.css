@@ -76,11 +76,11 @@ h2.title {
 /* YG BUTUH BESAR AJA */
 h3.title {
   color: var(--blue-dark-100);
-  font-family: "Playfair Display", serif;
-  font-size: 32px;
-  font-size: 2rem;
   padding: 10px 20px;
   position: relative;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
 }
 h4.title {
   font-size: 24px;
@@ -285,6 +285,10 @@ span.border-bottom::after {
   width: 370px; /* ini ukuran supaya bisa jadi 3*/
   /* background-color: red; */
 }
+#sec3.container .content p.desc,
+#sec2.container .content p.desc {
+  margin-top: -20px;
+}
 #sec3.container .content .card-box .card:hover,
 #sec2.container .content .card-box .card:hover {
   background: var(--white);
@@ -356,10 +360,11 @@ span.border-bottom::after {
 }
 #sec3.container .content .card-box .card .detail h3,
 #sec2.container .content .card-box .card .detail h3 {
-  margin: 10px 0;
+  margin: 10px 0 0 -20px;
   font-size: 24px;
   font-weight: 700;
 }
+
 #sec3.container .content .card-box .card .detail p,
 #sec2.container .content .card-box .card .detail p {
   margin: 10px 0;
@@ -411,10 +416,14 @@ span.border-bottom::after {
 
   h2.title {
     width: 75%;
-    font-size: 48px;
-    font-size: 3rem;
+    font-size: 32px;
+    /* font-size: 3rem; */
   }
-
+  h3.title {
+    font-size: 16px;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+  }
   span.border-bottom::after {
     content: "";
     position: absolute;
@@ -497,6 +506,10 @@ span.border-bottom::after {
     width: 100%;
     text-align: center;
     margin-top: -20px;
+  }
+  #sec2.container .content .card-box .card .detail h3.title,
+  #sec3.container .content .card-box .card .detail h3.title {
+    margin-left: -20px;
   }
   #sec3.container .content .card-box .card,
   #sec2.container .content .card-box .card {
