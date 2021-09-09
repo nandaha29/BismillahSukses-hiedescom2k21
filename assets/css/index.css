@@ -866,10 +866,10 @@ background-color: aqua;
   }
 
   /* ======================= SECTION 1 ======================= */
-  /* #sec1.container {
-    background-color: pink; */
-    /* height: 200vh; */
-  /* } */
+  #sec1.container {
+    /* background-color: pink; */
+    height: 200vh;
+  }
 
   #sec1.container .top {
     height: auto;
