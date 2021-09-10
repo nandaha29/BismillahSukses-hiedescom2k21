@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cultured</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="../assets/img/Logo.svg"
-      sizes="96x96"
-    />
 
-    <!-- ================================= CSS ================================= -->
-    <link rel="stylesheet" href="../assets/css/navbar.css" />
-    <link rel="stylesheet" href="/assets/css/suku.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultured</title>
+  <link rel="icon" type="image/png" href="assets/img/Logo.svg" sizes="96x96" />
 
-    <!-- Background CSS -->
-    <link rel="stylesheet" href="assets/css/background.css" />
+  <!-- ================================= CSS ================================= -->
 
-    <!--   <link rel="stylesheet" href="assets/css/loader.css" />
-        <link rel="stylesheet" href="assets/css/scrollAnimation.css" />-->
-    <link rel="stylesheet" href="../assets/css/footer.css" />
+  <!-- Index CSS -->
+  <link rel="stylesheet" href="assets/css/index.css" />
 
-    <!-- ============================= INITIAL  JS ============================= -->
-    <script src="../assets/js/jquery-3.6.0.min.js"></script>
-    <!-- <script src="assets/js/loader.js"></script> -->
-  </head>
+  <!-- Navbar CSS -->
+  <link rel="stylesheet" href="assets/css/navbar.css" />
 
-  <body>
-    <!-- =============================== LOADER =============================== -->
-    <!-- <div class="loader-container">
-          <div class="loader">
-            <span style="--i: 1"></span>
-            <div class="icon"></div>
-          </div>
-        </div> -->
+  <!--   <link rel="stylesheet" href="assets/css/loader.css" />
+  <link rel="stylesheet" href="assets/css/scrollAnimation.css" />-->
 
-    <!-- ============================== SECTION 1 ============================== -->
-    <section id="sec1" class="container">
-      <div class="top">
-        <div class="left">
-          <h1 class="title">
-            Ups, Halaman Sedang <span class="border-bottom"> Gaada!</span>
-          </h1>
-          <p class="desc color-grey-100">
-            Oops, Error 404. Halaman yang kamu cari tidak tersedia. Kembali ke
-            beranda dan cari apa yang kamu cari!
-          </p>
-          <a href="index.html">
-            <button class="btn">Beranda</button>
-          </a>
-        </div>
+  <!-- Background CSS -->
+  <link rel="stylesheet" href="assets/css/background.css">
 
-        <div class="right">
-          <div class="img-box">
-            <img src="../assets/img/404/404 - Hero.png" alt="404 Image" />
-          </div>
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="assets/css/footer.css" />
+
+  <!-- ============================= INITIAL  JS ============================= -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- <script src="assets/js/loader.js"></script> -->
+
+</head>
+
+<body>
+  <!-- =============================== LOADER =============================== -->
+  <!-- <div class="loader-container">
+      <div class="loader">
+        <span style="--i: 1"></span>
+        <div class="icon"></div>
+      </div>
+    </div> -->
+
+
+
+  <!-- =============================== NAVBAR =============================== -->
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <img src="assets/img/Navbar - Logo.svg" alt="Cultured" />
+      </div>
+    </a>
+
+    <div class="show white"></div>
+    <ul class="primary">
+      <div>
+        <li><a class="active">Beranda</a></li>
+        <li>
+          <a href="#sec3">Suku</a>
+        </li>
+        <li>
+          <a href="belanja.html">Belanja</a>
+        </li>
+        <li>
+          <a href="about.html">Tentang</a>
+        </li>
+      </div>
+      <span class="hide black">x</span>
+    </ul>
+  </nav>
+
+  <!-- ============================== SECTION 1 ============================== -->
+  <section id="sec1" class="container">
+    <div class="top">
+
+      <div class="left">
+        <h1 class="title">Ups, Halamannya<br>
+          Sedang <span class="border-bottom">Gaada!</span></h1>
+        <p class="desc color-grey-100">
+          Oops, Error 404. Halaman yang kamu cari tidak tersedia
+          Kembali ke beranda dan cari apa yang kamu cari!
+        </p>
+
+        <a href="index.html">
+          <button class="btn">Monggo uklam uklam 👋</button>
+        </a>
+
+      </div>
+
+      <div class="right">
+        <div class="img-box">
+          <img src="assets/img/404/404 - Hero.png" alt="40 Hero Section Image" />
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- =============================== FOOTER =============================== -->
 
-    <!-- ============================== JS SCRIPT ============================== -->
-    <script src="../assets/js/navbar.js"></script>
-    <!-- <script src="assets/js/filter.js"></script> -->
-    <!-- <script src="assets/js/scrollAnimation.js"></script> -->
-  </body>
+  <!-- ============================== JS SCRIPT ============================== -->
+  <script src="assets/js/navbar.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <!-- <script src="assets/js/scrollAnimation.js"></script> -->
+</body>
+
 </html>
