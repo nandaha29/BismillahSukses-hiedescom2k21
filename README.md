@@ -33,7 +33,7 @@ Website [Cultured](https://nandaha29.github.io/BismillahSukses-hiedescom2k21/) i
 
 ## Important Note
 
-Web ini digunakan sebagai partisipasi lomba [Hiedescom 2k20](https://hiedescom.com/)
+Web ini digunakan sebagai partisipasi lomba [Hiedescom 2k21](https://hiedescom.com/)
 
 ### Download Source Code
 
