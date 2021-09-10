@@ -23,7 +23,6 @@
   padding: 80px 100px 50px; /* top r-l bottom */
   position: relative;
   width: 100%;
-  /* background-color: khaki; */
 }
 
 .button {
@@ -33,14 +32,12 @@
   align-items: center;
   background: var(--orange-80);
   border-radius: 24px;
-  /* box-shadow: 0px 0px 30px rgba(46, 60, 64, 0.4); */
   box-sizing: border-box;
   padding: 15px 120px;
   text-decoration: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 18px;
-  /* margin: 20px 0; */
   border: none;
   color: var(--white);
 }
@@ -56,7 +53,6 @@ h1.title {
   font-size: 4rem;
   margin-bottom: 30px;
   text-transform: capitalize;
-  /* background-color: aqua; */
 }
 
 /* JUDUL SECTION  */
@@ -66,11 +62,8 @@ h2.title {
   font-size: 48px;
   font-size: 3rem;
   margin: auto auto 44px auto;
-  /* padding: 20px; */
   position: relative;
-  /* text-align: left; */
   text-transform: capitalize;
-  /* width: 65%; */
 }
 
 /* YG BUTUH BESAR AJA */
@@ -79,13 +72,8 @@ h3.title {
   font-family: "Playfair Display", serif;
   font-size: 32px;
   font-size: 2rem;
-  /* margin: auto auto 44px auto; */
   padding: 10px 20px;
   position: relative;
-  /* text-align: center; */
-  /* text-transform: capitalize; */
-  /* width: 65%; */
-  /* background-color: red; */
 }
 h4.title {
   font-size: 24px;
@@ -110,7 +98,6 @@ p.sub-title {
   border-bottom: 3px solid var(--blue);
   width: 180px;
   padding-bottom: 5px;
-  /* text-transform: uppercase; */
 }
 
 span.border-bottom {
@@ -147,7 +134,6 @@ span.border-bottom::after {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  /* background-color: yellow; */
 }
 #sec1.container .top .left,
 #sec1.container .top .right {
@@ -159,15 +145,11 @@ span.border-bottom::after {
 #sec1.container .top .left {
   margin-top: 150px;
   padding-left: 100px;
-  /* background-color: aquamarine; */
 }
 #sec1.container .top .left .desc {
   margin-bottom: 30px;
   width: 75%;
 }
-/* #sec1.container .top .left .desc span {
-  display: block;
-} */
 
 #sec1.container .top .left .event-box {
   -webkit-box-align: center;
@@ -187,7 +169,6 @@ span.border-bottom::after {
   width: 75%;
   box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
   margin-top: 100px;
-  /* background-color: aqua; */
   background-color: var(--white);
 }
 
@@ -198,26 +179,19 @@ span.border-bottom::after {
   display: flex;
   background-color: var(--white);
   align-items: center;
-  /* background-color: aqua; */
 }
 
 .event-box .sub-left .content-container,
 .event-box .sub-right .content-container {
   padding-left: 15px;
-  /* background-color: yellow; */
 }
 
 .sub-right .calendar-icon,
 .sub-left .acara-icon {
   display: flex;
   align-items: center;
-  /* background-color: red; */
-  /* padding-right: 20px; */
 }
 
-/* .event-box p {
-  font-size: 1rem;
-} */
 .event-box h5 {
   font-size: 20px;
   font-size: 1.25rem;
@@ -256,7 +230,6 @@ span.border-bottom::after {
   -webkit-transform: translateY(-50%);
   transform: translateY(-45%); /* buat naik turunnya*/
   width: 45rem; /* buat ukuran img*/
-  /* background-color: yellow; */
 }
 
 #sec1.container .top .right .img-box img {
@@ -303,10 +276,9 @@ span.border-bottom::after {
 }
 
 /* ====================================== SECTION 2 ====================================== */
-#sec2.container{
-/* background-color: pink; */
-    height: auto;
-padding-bottom: 150px;
+#sec2.container {
+  height: auto;
+  padding-bottom: 150px;
 }
 
 #sec2.container .top {
@@ -322,8 +294,6 @@ padding-bottom: 150px;
   justify-content: space-around;
   position: relative;
   width: 100%;
-  /* background-color: yellow; */
-  /* display: grid;  */
 }
 
 #sec2.container .top .left,
@@ -333,13 +303,6 @@ padding-bottom: 150px;
   padding-top: 100px;
 }
 /* ============================== S2 TOP LEFT ============================== */
-/* #sec2.container .top .left{  */
-/* background-color: bisque; */
-
-/* grid-gap: 1rem; */
-/* padding: 1rem; */
-/* margin: 0 auto; */
-/* } */
 #sec2.container .top .left .card-box {
   width: 100%;
 }
@@ -349,7 +312,6 @@ padding-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: var(--white);
   align-items: center;
 }
 
@@ -366,7 +328,7 @@ padding-bottom: 150px;
   transition: all 0.5s;
   display: flex;
   flex-direction: column;
-  /* background-color: red; */
+  background-color: var(--white);
 }
 #sec2.container .top .left .card-box .card:hover {
   /* height: 350px; */
@@ -417,14 +379,10 @@ padding-bottom: 150px;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-between;
-  /* margin: auto; */
   margin-left: 50px;
   width: 70%;
 }
-/* #sec2.container .data-box .data { */
-/* text-align: left; */
-/* background-color: yellow; */
-/* } */
+
 #sec2.container .data-box .data h3.counter {
   color: var(--blue);
   font-size: 2rem;
@@ -442,16 +400,11 @@ padding-bottom: 150px;
 
 /* ====================================== SECTION 3 ====================================== */
 #sec3.container {
-  /* background-color: rosybrown; */
-  /* height: 120vh; */
-    height: auto;
-
+  height: auto;
 }
 
 /* ============================== S3 CONTENT ============================== */
-/* #sec3.container .content {
-background-color: aqua;
-} */
+
 #sec3.container .content h2.title {
   align-content: left;
   margin-bottom: 56px;
@@ -485,14 +438,9 @@ background-color: aqua;
 }
 .card-box::-webkit-scrollbar-thumb {
   background-color: var(--orange-80);
-
   border-radius: 50px;
-  /* visibility: hidden; */
   opacity: 0.25;
 }
-/* .card-box::-webkit-scrollbar-thumb:hover {
-  visibility: visible;
-} */
 
 #sec3.container .content .card-box .card {
   border-radius: 20px;
@@ -504,7 +452,6 @@ background-color: aqua;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   width: 400px;
-  /* background-color: red; */
   position: relative;
   pointer-events: auto;
 }
@@ -513,7 +460,6 @@ background-color: aqua;
   margin: 35px 0 10px 0;
   pointer-events: auto;
   background-color: aqua;
-
 }
 #sec3.container .content .card-box .card a button {
   background-color: red;
@@ -523,7 +469,6 @@ background-color: aqua;
   font-size: 1rem;
   color: var(--white);
   margin-top: 60px;
-  
 }
 
 #sec3.container .content .card-box .card:hover {
@@ -545,7 +490,6 @@ background-color: aqua;
 
 #sec3.container .content .card-box .card .img-box:hover {
   box-shadow: none;
-
 }
 
 #sec3.container .content .card-box .card .img-box img {
@@ -556,21 +500,18 @@ background-color: aqua;
   transform: translateX(-50%);
   height: 100%;
   pointer-events: none;
-
 }
 
 #sec3.container .content .card-box .card h3 {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   font-size: 1.5rem;
-  /* line-height: 1.1; */
   margin-bottom: 16px;
 }
 #sec3.container .content .card-box .card p {
   font-family: "Open Sans", sans-serif;
   color: var(--grey-100);
   font-size: 18px;
-  /* font-size: 1rem; */
 }
 
 #sec3.container .content .card-box span {
@@ -580,16 +521,11 @@ background-color: aqua;
 
 /* ====================================== SECTION 4 ====================================== */
 #sec4.container {
-  /* background-color: khaki; */
-  /* height: 200vh; */
-    height: auto;
-
+  height: auto;
 }
 
 /* ============================== S4 CONTENT ============================== */
-/* #sec4.container .content {
-  background-color: aqua;
-} */
+
 #sec4.container .content h2.title {
   text-align: left;
   margin-bottom: 56px;
@@ -1038,7 +974,7 @@ background-color: aqua;
   }
   #sec3.container .content .card-box .card {
     flex-shrink: 0; /*  Supaya bisa pas 1 card*/
-  box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
+    box-shadow: 0px 8px 32px rgba(14, 23, 49, 0.08);
   }
 
   /* ====================================== SECTION 4 ====================================== */
@@ -1066,7 +1002,6 @@ background-color: aqua;
     transition: 0.3s;
     /* background-color: red; */
     width: 320px;
-
   }
 
   /* ============================== SECTION 5 ============================== */
@@ -1133,7 +1068,7 @@ background-color: aqua;
   }
 
   /* ======================= SECTION 1 ======================= */
-  #sec1.container{
+  #sec1.container {
     height: auto;
   }
   #sec1.container .top .left,
@@ -1201,7 +1136,7 @@ background-color: aqua;
   }
   #sec2.container .top .left .card-box .card {
     height: 350px;
-    background-color: white;
+    /* background-color: white; */
     margin-left: 0;
   }
   #sec2.container .top .left .card-box .card img {
@@ -1283,7 +1218,7 @@ background-color: aqua;
   #sec3.container .content .card-box .card {
     height: 450px;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
   }
 
   /* ====================================== SECTION 4 ====================================== */
@@ -1305,27 +1240,27 @@ background-color: aqua;
     display: none;
   }
 
-/*  INI BUAT COROUSEL ==========================================================*/
+  /*  INI BUAT COROUSEL ==========================================================*/
   #sec4.container .content .card-box {
-  margin: auto;
-  box-sizing: border-box;
-  flex-wrap: nowrap;
-  -webkit-box-pack: start;
-  overflow-x: auto;
-  padding: 20px 0;
-  width: 100%;
-  justify-content: space-between;
-  scroll-behavior: smooth;
-  align-items: stretch;
-  /*  BISA COROUSEL */
+    margin: auto;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    overflow-x: auto;
+    padding: 20px 0;
+    width: 100%;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    align-items: stretch;
+    /*  BISA COROUSEL */
 
-  /* background-color: red; */
-  overflow: auto;
-  overflow-y: hidden;
-}
-#sec4.container .content .card-box .card {
+    /* background-color: red; */
+    overflow: auto;
+    overflow-y: hidden;
+  }
+  #sec4.container .content .card-box .card {
     flex-shrink: 0; /*  Supaya bisa pas 1 card*/
-  } 
+  }
   /* ============================== SECTION 5 ============================== */
   #sec5.container .content {
     margin: 200px 0;
@@ -1337,7 +1272,6 @@ background-color: aqua;
     width: 100%;
     /* margin-bottom: 60px; */
     height: auto;
-
   }
   #sec5.container .content p.desc {
     margin: -50px auto 90px;
