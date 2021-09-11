@@ -17,8 +17,8 @@
 .bg-white {
   background-color: var(--white) !important;
 }
-.font-serif{
-  font-family: 'Playfair Display', serif !important;
+.font-serif {
+  font-family: "Playfair Display", serif !important;
 }
 
 .container {
@@ -127,6 +127,9 @@ span.border-bottom::after {
   width: 100%;
   border-bottom: 16px solid var(--orange-80);
   z-index: -1;
+}
+h2.title span.border-bottom::after {
+  border-bottom: 12px solid var(--orange-80);
 }
 
 /* ====================================== SECTION 1 ====================================== */
