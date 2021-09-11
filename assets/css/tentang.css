@@ -110,46 +110,105 @@ span.border-bottom::after {
   background-color: aqua;
 }
 /* HOW TO MAKE SLIDER???? */
-/* #sec1.container .slides {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-scroll-snap-type: x mandatory;
-  -ms-scroll-snap-type: x mandatory;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-} */
-
-/* .slides::-webkit-scrollbar {
-  display: none;
+#sec1.container .content {
+  overflow: hidden;
+  /* height: 350px; */
+  background-color: red;
+  height: 100%;
 }
 
-#sec1.container .slides > div {
-  position: relative;
-  scroll-snap-align: start;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+#sec1.container .content .slides div {
+  width: 20%;
+  float: left;
+}
+
+#sec1.container .content .slides img {
   width: 100%;
-  height: 100vh;
-  background: silver;
+  float: left;
+  /* height: 100%; */
+}
+
+#sec1.container .content .slides {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 100px;
-  overflow: hidden;
-} */
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slidy infinite;
+}
 
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
 
+  10% {
+    left: 0%;
+  }
 
+  12% {
+    left: -100%;
+  }
+
+  22% {
+    left: -100%;
+  }
+
+  24% {
+    left: -200%;
+  }
+
+  34% {
+    left: -200%;
+  }
+
+  36% {
+    left: -300%;
+  }
+
+  46% {
+    left: -300%;
+  }
+
+  48% {
+    left: -400%;
+  }
+
+  58% {
+    left: -400%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  70% {
+    left: -300%;
+  }
+
+  72% {
+    left: -200%;
+  }
+
+  82% {
+    left: -200%;
+  }
+
+  84% {
+    left: -100%;
+  }
+
+  94% {
+    left: -100%;
+  }
+
+  96% {
+    left: 0%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
 
 /* ====================================== SECTION 2 ====================================== */
 /* #sec2.container {
@@ -244,10 +303,11 @@ span.border-bottom::after {
 }
 
 /* ====================================== SECTION 3 ====================================== */
-/* #sec3.container {
-  background-color: tan;
+#sec3.container {
+  /* background-color: pink; */
+  padding-bottom: 100px;
 }
-#sec3.container .content {
+/* #sec3.container .content {
   background-color: aqua;
 } */
 #sec3.container .content h2.title {
@@ -288,7 +348,6 @@ span.border-bottom::after {
   transition: 0.3s;
   width: 300px; /* ini ukuran supaya bisa jadi 3*/
   background-color: white;
-
 }
 
 #sec3.container .content .card-box .card:hover {
@@ -341,9 +400,9 @@ span.border-bottom::after {
 #sec3.container .content .card-box .card .bot a {
   text-decoration: none;
 }
-#sec3.container button.btn img{
+#sec3.container button.btn img {
   justify-content: center;
-padding-top: 5px;
+  padding-top: 5px;
 }
 #sec3.container button.btn {
   /* background: var(--orange-80); */
@@ -387,23 +446,51 @@ padding-top: 5px;
 }
 
 /* ====================================== SECTION 4 ====================================== */
-#sec4.container {
+/* #sec4.container {
   background-color: tan;
-}
-#sec4.container .content {
-  background-color: aqua;
-}
-#sec4.container .content h2.title {
-  margin-bottom: 56px;
+} */
+
+#sec4.container h2.title {
+  /* margin-bottom: 56px; */
   width: 100%;
   display: flex;
   /* background-color: pink; */
   justify-content: center;
 }
-
-#sec4.container .content p.desc {
-  margin: -50px 0 30px 0;
-  justify-content: center;
-  width: 100%;
+.contributor p {
+    color: var(--blue-dark-100);
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contributor a {
+    color: var(--blue-dark-100);
+    font-size: 13px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#sec4.container p.desc {
+  /* background-color: pink; */
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+#sec4.container .content {
+  /* background-color: aqua; */
   display: flex;
+}
+#sec4.container .content .left,
+#sec4.container .content .right {
+  /* background-color: yellow; */
+  width: 50%;
+}
+#sec4.container .content h4.title{
+  /* background-color: aqua; */
+  margin: 10px 0;
+  color: var(--orange-80);
+  font-size: 24px;
+
 }
