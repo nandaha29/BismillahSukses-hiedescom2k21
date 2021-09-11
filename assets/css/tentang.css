@@ -101,6 +101,10 @@ span.border-bottom::after {
   z-index: -1;
 }
 
+h2.title span.border-bottom::after {
+  border-bottom: 12px solid var(--orange-80);
+}
+
 /* ====================================== SECTION 1 ====================================== */
 #sec1.container {
   height: 100vh;
@@ -266,12 +270,9 @@ span.border-bottom::after {
   margin: 10px;
 }
 #sec2.container .content .card-box .card:hover {
-  /* height: 350px; */
   height: 450px;
 }
-/* #sec2.container .content .card-box .card .img-box {
-  border-radius: 32px;
-} */
+
 
 #sec2.container .content .card-box .card img {
   border-radius: none;
@@ -348,11 +349,13 @@ span.border-bottom::after {
   transition: 0.3s;
   width: 300px; /* ini ukuran supaya bisa jadi 3*/
   background-color: white;
+  cursor: pointer;
 }
 
 #sec3.container .content .card-box .card:hover {
   background: var(--white);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9, 0.9);
 }
 
 #sec3.container .content .card-box .card .img-box {
@@ -458,17 +461,17 @@ span.border-bottom::after {
   justify-content: center;
 }
 .contributor p {
-    color: var(--blue-dark-100);
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    font-weight: bold;
+  color: var(--blue-dark-100);
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .contributor a {
-    color: var(--blue-dark-100);
-    font-size: 13px;
-    font-size: 1.2rem;
-    font-weight: 400;
+  color: var(--blue-dark-100);
+  font-size: 13px;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 #sec4.container p.desc {
   /* background-color: pink; */
@@ -487,10 +490,9 @@ span.border-bottom::after {
   /* background-color: yellow; */
   width: 50%;
 }
-#sec4.container .content h4.title{
+#sec4.container .content h4.title {
   /* background-color: aqua; */
   margin: 10px 0;
   color: var(--orange-80);
   font-size: 24px;
-
 }
