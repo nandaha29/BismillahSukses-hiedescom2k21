@@ -15,6 +15,9 @@
 .uppercase {
   text-transform: uppercase;
 }
+.bg-white{
+  background-color: var(--white) !important;
+}
 
 .container {
   box-sizing: border-box;
