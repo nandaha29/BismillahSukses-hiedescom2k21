@@ -18,6 +18,9 @@
 .bg-white{
   background-color: var(--white) !important;
 }
+.font-serif{
+  font-family: 'Playfair Display', serif !important;
+}
 
 .container {
   box-sizing: border-box;
