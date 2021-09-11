@@ -345,6 +345,7 @@ h2.title span.border-bottom::after {
   width: 100%;
   justify-content: center;
   margin-top: 32px;
+  margin-bottom: 100px;
 }
 #sec3.container .content .card-box .card {
   border-radius: 32px;
