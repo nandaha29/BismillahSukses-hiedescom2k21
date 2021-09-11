@@ -1,0 +1,500 @@
+/* ====================================== UNIVERSAL ====================================== */
+.color-grey-100 {
+  color: var(--grey-100) !important;
+}
+.color-grey-20 {
+  color: var(--grey-20) !important;
+}
+.color-blue-dark-100 {
+  color: var(--blue-dark-100) !important;
+}
+.color-blue {
+  color: var(--blue) !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bg-white{
+  background-color: var(--white) !important;
+}
+.container {
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 80px 100px 50px; /* top r-l bottom */
+  position: relative;
+  width: 100%;
+  /* background-color: khaki; */
+}
+
+/* JUDUL PALING BESAR */
+h1.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  font-size: 4rem;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  /* background-color: aqua; */
+}
+
+/* JUDUL SECTION  */
+h2.title {
+  color: var(--blue-dark-100);
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-size: 3rem;
+  margin: auto auto 44px auto;
+  /* padding: 20px; */
+  position: relative;
+  /* text-align: left; */
+  text-transform: capitalize;
+  /* width: 65%; */
+}
+
+/* YG BUTUH BESAR AJA */
+h3.title {
+  color: var(--blue-dark-100);
+  padding: 10px 20px;
+  position: relative;
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+h4.title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* INI BUAT DESKRIPSI */
+p.desc {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+p.small {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p.sub-title {
+  color: var(--blue);
+  border-bottom: 3px solid var(--blue);
+  width: 180px;
+  padding-bottom: 5px;
+  /* text-transform: uppercase; */
+}
+
+span.border-bottom {
+  font-family: "Playfair Display", serif;
+  position: relative;
+}
+
+span.border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  border-bottom: 16px solid var(--orange-80);
+  z-index: -1;
+}
+
+h2.title span.border-bottom::after {
+  border-bottom: 12px solid var(--orange-80);
+}
+
+/* ====================================== SECTION 1 ====================================== */
+#sec1.container {
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  background-color: aqua;
+}
+/* HOW TO MAKE SLIDER???? */
+#sec1.container .content {
+  overflow: hidden;
+  /* height: 350px; */
+  background-color: red;
+  height: 100%;
+}
+
+#sec1.container .content .slides div {
+  width: 20%;
+  float: left;
+}
+
+#sec1.container .content .slides img {
+  width: 100%;
+  float: left;
+  /* height: 100%; */
+}
+
+#sec1.container .content .slides {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slidy infinite;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+
+  10% {
+    left: 0%;
+  }
+
+  12% {
+    left: -100%;
+  }
+
+  22% {
+    left: -100%;
+  }
+
+  24% {
+    left: -200%;
+  }
+
+  34% {
+    left: -200%;
+  }
+
+  36% {
+    left: -300%;
+  }
+
+  46% {
+    left: -300%;
+  }
+
+  48% {
+    left: -400%;
+  }
+
+  58% {
+    left: -400%;
+  }
+
+  60% {
+    left: -300%;
+  }
+
+  70% {
+    left: -300%;
+  }
+
+  72% {
+    left: -200%;
+  }
+
+  82% {
+    left: -200%;
+  }
+
+  84% {
+    left: -100%;
+  }
+
+  94% {
+    left: -100%;
+  }
+
+  96% {
+    left: 0%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+/* ====================================== SECTION 2 ====================================== */
+/* #sec2.container {
+  background-color: pink;
+} */
+#sec2.container .content {
+  /* background-color: pink; */
+  /* box-sizing: border-box; */
+  margin-top: 50px;
+}
+#sec2.container .content h2.title {
+  margin-bottom: 56px;
+  width: 100%;
+  display: flex;
+  /* background-color: pink; */
+  justify-content: center;
+}
+
+#sec2.container .content p.desc {
+  margin: -50px 0 30px 0;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+#sec2.container .content .card-box {
+  /* background-color: red; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: auto;
+  margin-top: 32px;
+  height: auto;
+  justify-content: space-around;
+}
+
+#sec2.container .content .card-box img {
+  /* width: 380px; */
+  width: 280px;
+  border-radius: 32px;
+}
+#sec2.container .content .card-box .card {
+  width: 380px;
+  height: 260px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 20px;
+  margin: 10px;
+}
+#sec2.container .content .card-box .card:hover {
+  height: 450px;
+}
+
+
+#sec2.container .content .card-box .card img {
+  border-radius: none;
+  transition: all 0.5s;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+/* #sec2.container .content .card-box .card:hover img {
+    width: 380px;
+} */
+
+.card-box .card p.desc {
+  font-size: 18px;
+  padding-top: 60px;
+  /* background-color: yellow; */
+  width: 100%;
+}
+
+#sec2.container .card-box .card h3.title {
+  font-family: "Playfair Display", serif;
+  margin: 5px 0 0 0;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  font-size: 24px;
+}
+
+/* ====================================== SECTION 3 ====================================== */
+#sec3.container {
+  /* background-color: pink; */
+  padding-bottom: 100px;
+}
+/* #sec3.container .content {
+  background-color: aqua;
+} */
+#sec3.container .content h2.title {
+  margin-bottom: 56px;
+  width: 100%;
+  display: flex;
+  /* background-color: pink; */
+  justify-content: center;
+}
+
+#sec3.container .content p.desc {
+  margin: -50px 0 30px 0;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+/* ============================== S3 CARD-BOX ============================== */
+#sec3.container .content .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 32px;
+}
+#sec3.container .content .card-box .card {
+  border-radius: 32px;
+  box-sizing: border-box;
+  /* margin: 16px 0 16px 0; ini yang ukuran awal*/
+  margin: 16px;
+  padding: 24px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 300px; /* ini ukuran supaya bisa jadi 3*/
+  background-color: white;
+  cursor: pointer;
+}
+
+#sec3.container .content .card-box .card:hover {
+  background: var(--white);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9, 0.9);
+}
+
+#sec3.container .content .card-box .card .img-box {
+  border-radius: 20px;
+  height: 280px;
+  margin: auto auto 15px;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+#sec3.container .content .card-box .card .img-box:hover {
+  box-shadow: none;
+}
+
+#sec3.container .content .card-box .card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 120%;
+  pointer-events: none;
+}
+/* ============================== S4 CARD-BOX CATEGORY ============================== */
+#sec3.container .content .card-box .card .category {
+  justify-content: space-between;
+  margin: 20px 0;
+  box-sizing: border-box;
+  /* background-color: aqua; */
+}
+
+/* ============================== S4 CARD-BOX CARD DETAIL BOT ============================== */
+#sec3.container .content .card-box .card .bot {
+  justify-content: space-between;
+  display: flex;
+  /* height: 50px; */
+  margin-top: 50px;
+  /* background-color: aqua; */
+}
+
+#sec3.container .content .card-box .card .bot a {
+  text-decoration: none;
+}
+#sec3.container button.btn img {
+  justify-content: center;
+  padding-top: 5px;
+}
+#sec3.container button.btn {
+  /* background: var(--orange-80); */
+  box-sizing: border-box;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 10px 14.5px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  /* margin-top: 50px; */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#sec3.container button.btn.red {
+  background-color: var(--red-100);
+}
+#sec3.container button.btn.violet {
+  background-color: var(--violet-100);
+}
+#sec3.container button.btn.blue {
+  background-color: var(--blue);
+}
+#sec3.container button.btn.orange {
+  background-color: var(--orange-100);
+}
+#sec3.container button.btn.red:hover {
+  background-color: var(--red-80);
+}
+#sec3.container button.btn.violet:hover {
+  background-color: var(--violet-80);
+}
+#sec3.container button.btn.blue:hover {
+  background-color: var(--blue-80);
+}
+#sec3.container button.btn.orange:hover {
+  background-color: var(--orange-80);
+}
+
+/* ====================================== SECTION 4 ====================================== */
+/* #sec4.container {
+  background-color: tan;
+} */
+
+#sec4.container h2.title {
+  /* margin-bottom: 56px; */
+  width: 100%;
+  display: flex;
+  /* background-color: pink; */
+  justify-content: center;
+}
+.contributor p {
+  color: var(--blue-dark-100);
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.contributor a {
+  color: var(--blue-dark-100);
+  font-size: 13px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#sec4.container p.desc {
+  /* background-color: pink; */
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: -30px;
+}
+#sec4.container .content {
+  /* background-color: aqua; */
+  display: flex;
+}
+#sec4.container .content .left,
+#sec4.container .content .right {
+  /* background-color: yellow; */
+  width: 50%;
+}
+#sec4.container .content h4.title {
+  /* background-color: aqua; */
+  margin: 10px 0;
+  color: var(--orange-80);
+  font-size: 24px;
+}
