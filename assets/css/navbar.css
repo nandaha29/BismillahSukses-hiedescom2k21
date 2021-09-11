@@ -16,10 +16,8 @@ font-family: 'Playfair Display', serif;
   --grey-20: #dddfe2;
   --red-100: #bf211e;
   --red-80: #CD5F5D;
-
   --violet-100: #7b38ae;
   --violet-80: #AA73D3;
-
   --orange-100: #e28721;
   --orange-80: #ffaa4c;
   --primary-bg: #fff;
@@ -36,11 +34,7 @@ font-family: 'Playfair Display', serif;
 }
 
 body {
-  /* background-color: aqua; */
-  /* background-image: url(../img/beranda/bg.png); */
   z-index: -5;
-  /* height: 100vh; */
-  /* overflow: hidden;  */
 }
 
 /* ====================================== SCROLLBAR ====================================== */
